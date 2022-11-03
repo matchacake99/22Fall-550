@@ -100,12 +100,13 @@ module processor(
      wire [1:0] Zeroes;
      wire [16:0] immed;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
-    alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan,dummy);   
+    alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, dummy);   
 
     //Insn Mem
     assign address_imem = pc_out[11:0];
     assign insn_out = q_imem;
 
+    getSig(opcode, R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra);
     assign opcode = insn_out[31:27];
     assign rs = insn_out[21:17];
     assign rt = R? insn_out[16:12]:5'b00000;
@@ -122,7 +123,7 @@ module processor(
     assign ctrl_writeReg = rd;
     assign ctrl_readRegA = rs;
     assign ctrl_readRegB = rt;
-    assign data_writeReg = is_lw? data_out:(R_add|R_sub|addi)?(overflow?overflow_dta:alu_result):alu_result;
+    assign data_writeReg = lw? data_out:(R_add|R_sub|addi)?(overflow?overflow_dta:alu_result):alu_result;
 	 
      
     //ALU 

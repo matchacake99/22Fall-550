@@ -94,11 +94,12 @@ module processor(
 
 
     //PC & PC + 4
-     wire [31:0] pc_in, pc_out, insn_out;
+     wire [31:0] pc_in, pc_out, insn_out, sign_extend;
      wire dummy;
      wire [5:0] opcode, rd, rs, rt, shamt, ALUop, Zeroes, reg_outA, reg_outB, alu_result, data_out;
      wire [1:0] Zeroes;
      wire [16:0] immed;
+     wire overflow, R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra, Rwe, Rdst, ALUinB, DMwe, RWd;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
     alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, dummy);   
 
@@ -115,6 +116,7 @@ module processor(
     assign ALUop = R? [6:2]: 5'b00000;
     assign Zeroes = [1:0];
     assign immed = Instr[16:0];
+    assign sign_extend = {{15{immed[16]}},immed};
 
 
 
@@ -128,17 +130,23 @@ module processor(
      
     //ALU 
     assign reg_outA = data_readRegA;
-    assign reg_outB = data_operandB;
+    assign reg_outB = ALUinB? sign_extend : data_readRegB;
     assign alu_result = address_dmem;
     assign overflow_dta= R_add? 32'd1:R_sub? 32'd3:addi? 32'd2:32'd0;
     alu alu_dtapath(.data_operandA(reg_outA), .data_operandB(reg_outB), .ctrl_ALUopcode(ALUop),
 			.ctrl_shiftamt(shamt), .data_result(alu_result), .isNotEqual(dummy), .isLessThan(dummy), .overflow(overflow))
-            //need to fill overflow????????
+    
+    //Write to 
+    wire[31:0] s1,s2;
+    wire enableTwo;
+	regfile reg1(.clock(clock), .ctrl_writeEnable(Rwe), .ctrl_reset(reset), .ctrl_writeReg(32'h001E),
+	.ctrl_readRegA(rs), .ctrl_readRegB(rt), .data_writeReg(data_writeReg), .data_readRegA(s1),
+	.data_readRegB(s2));
 
     //Data Mem
     assign address_dmem = alu_result[11:0];
     assign wren = DMwe;
-    assign data = reg_outB;
+    assign data = data_readRegB;
     assign data_out = q_dmem;
 
     

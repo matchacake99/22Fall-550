@@ -7,193 +7,109 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/zs149/Documents/github/550-cp4/simulation/qsim
-vcmp
-Z1 !s110 1667410196
+Z0 dC:/Users/vcm/Desktop/test/simulation/qsim
+vhard_block
+Z1 !s110 1667529206
 !i10b 1
-!s100 HkA>oL9@]lPY75D0QZ0kM3
-Io1_CS;;n`Kcj[_X2oaKA^0
+!s100 WYMja^acbETIO^H]Y=1nn0
+IRn2cV4cJdF2:Jb61GaC@B1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1667410195
-Z3 8processor.vo
-Z4 Fprocessor.vo
-Z5 L0 32
+Z3 w1667529205
+Z4 8test.vo
+Z5 Ftest.vo
+L0 5255
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1667410196.000000
-Z8 !s107 processor.vo|
-Z9 !s90 -work|work|processor.vo|
+Z7 !s108 1667529206.000000
+Z8 !s107 test.vo|
+Z9 !s90 -work|work|test.vo|
 !i113 1
 Z10 o-work work
 Z11 tCvgOpt 0
-vcmp_vlg_vec_tst
+vprocessor
 R1
 !i10b 1
-!s100 a>_GeeiLSK6>EOREK48JI0
-I6k;eZC6=7RVNEHkX;M2d03
+!s100 ?YjjjGi=Hf<ngml`@8jAO0
+IOCQbN_;_<^4Q[>ihDGLK60
 R2
 R0
-w1667410194
-Z12 8Waveform.vwf.vt
-Z13 FWaveform.vwf.vt
-Z14 L0 30
+R3
+R4
+R5
+Z12 L0 32
 R6
 r1
 !s85 0
 31
 R7
-Z15 !s107 Waveform.vwf.vt|
-Z16 !s90 -work|work|Waveform.vwf.vt|
+R8
+R9
 !i113 1
 R10
 R11
-vcontrol_signal
-Z17 !s110 1667486766
+vprocessor_vlg_vec_tst
+R1
 !i10b 1
-!s100 oaY9U_8kfXbTCiFAN9^Oe0
-I35<P`W;F8FkmHIWURLEYM0
+!s100 `Sd:U55n<<Ek?Q3>oX3^L1
+Ie@gofghW3_=XBYEPak0T72
 R2
 R0
-Z18 w1667486765
-R3
+w1667529203
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+Z13 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+vskeleton
+Z14 !s110 1667528482
+!i10b 1
+!s100 :N:XPcMJk8NBC=Pjanh@40
+IbCH]BiM6AOeJ6XU0H0NUO1
+R2
+R0
+w1667528480
 R4
 R5
-R6
-r1
-!s85 0
-31
-Z19 !s108 1667486766.000000
-R8
-R9
-!i113 1
-R10
-R11
-vcontrol_signal_vlg_vec_tst
-R17
-!i10b 1
-!s100 ]UPcH?g^FbQ@:8`AXX8Xe2
-IHRooY60`@MC2lac_N?JQ81
-R2
-R0
-w1667486764
-8Waveform4.vwf.vt
-FWaveform4.vwf.vt
-R14
-R6
-r1
-!s85 0
-31
-R19
-!s107 Waveform4.vwf.vt|
-!s90 -work|work|Waveform4.vwf.vt|
-!i113 1
-R10
-R11
-vfive_to_thirtytwo_decoder
-!s110 1667484542
-!i10b 1
-!s100 ;SFa;dk5eJ=ZjgZZZizYd2
-IX@`^CbHVni2PIgUn0A>Th1
-R2
-R0
-w1667484521
-R3
-R4
-R5
-R6
-r1
-!s85 0
-31
-Z20 !s108 1667484542.000000
-R8
-R9
-!i113 1
-R10
-R11
-vfive_to_thirtytwo_decoder_vlg_vec_tst
-!s110 1667484543
-!i10b 1
-!s100 hReUT;=?LeMCXIFVSA9TS1
-I7=W^U[Y<eCPJ3OZ5Q`:>]3
-R2
-R0
-w1667484519
-8Waveform2.vwf.vt
-FWaveform2.vwf.vt
-R14
-R6
-r1
-!s85 0
-31
-R20
-!s107 Waveform2.vwf.vt|
-!s90 -work|work|Waveform2.vwf.vt|
-!i113 1
-R10
-R11
-vhard_block
-R17
-!i10b 1
-!s100 XlB26T:XJlM?ShR0^coR`2
-IGbUg=Co2mB16OX2Ge7KWD0
-R2
-R0
-R18
-R3
-R4
-L0 340
-R6
-r1
-!s85 0
-31
-R19
-R8
-R9
-!i113 1
-R10
-R11
-vsx
-Z21 !s110 1667408102
-!i10b 1
-!s100 7eEDAOFL<1Ahml7UeI^Je1
-Ib^`hXUBR8Be^XL>UdWok03
-R2
-R0
-w1667408101
-R3
-R4
-R5
-R6
-r1
-!s85 0
-31
-Z22 !s108 1667408102.000000
-R8
-R9
-!i113 1
-R10
-R11
-vsx_vlg_vec_tst
-R21
-!i10b 1
-!s100 jfE<bN;j?iWZNU3`hYlaz1
-I`<@MA]ENim39?`LL^NAO40
-R2
-R0
-w1667408099
 R12
-R13
-R14
 R6
 r1
 !s85 0
 31
-R22
+Z15 !s108 1667528482.000000
+R8
+R9
+!i113 1
+R10
+R11
+vskeleton_vlg_vec_tst
+R14
+!i10b 1
+!s100 T`K45Wg^nnhJ5MN>1IQ@j1
+IR4N>R`zNf35?4lIMDo8UM0
+R2
+R0
+w1667528479
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R13
+R6
+r1
+!s85 0
+31
 R15
-R16
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
 !i113 1
 R10
 R11

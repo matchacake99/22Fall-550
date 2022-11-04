@@ -19,300 +19,52 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/02/2022 13:29:54"
+// Generated on "11/03/2022 22:21:19"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          cmp
+// Verilog Test Bench (with test vectors) for design :                          skeleton
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module cmp_vlg_vec_tst();
+module skeleton_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg [4:0] numberTwo;
-reg [4:0] numberone;
+reg clock;
+reg reset;
 // wires                                               
-wire equal_flag;
+wire dmem_clock;
+wire imem_clock;
+wire processor_clock;
+wire regfile_clock;
 
 // assign statements (if any)                          
-cmp i1 (
+skeleton i1 (
 // port map - connection between master ports and signals/registers   
-	.equal_flag(equal_flag),
-	.numberTwo(numberTwo),
-	.numberone(numberone)
+	.clock(clock),
+	.dmem_clock(dmem_clock),
+	.imem_clock(imem_clock),
+	.processor_clock(processor_clock),
+	.regfile_clock(regfile_clock),
+	.reset(reset)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
-// numberTwo[ 4 ]
-initial
+
+// clock
+always
 begin
-	numberTwo[4] = 1'b1;
-	numberTwo[4] = #70000 1'b0;
-	numberTwo[4] = #40000 1'b1;
-	numberTwo[4] = #50000 1'b0;
-	numberTwo[4] = #10000 1'b1;
-	numberTwo[4] = #40000 1'b0;
-	numberTwo[4] = #20000 1'b1;
-	numberTwo[4] = #40000 1'b0;
-	numberTwo[4] = #10000 1'b1;
-	numberTwo[4] = #20000 1'b0;
-	numberTwo[4] = #10000 1'b1;
-	numberTwo[4] = #20000 1'b0;
-	numberTwo[4] = #20000 1'b1;
-	numberTwo[4] = #20000 1'b0;
-	numberTwo[4] = #10000 1'b1;
-	numberTwo[4] = #20000 1'b0;
-	numberTwo[4] = #20000 1'b1;
-	numberTwo[4] = #10000 1'b0;
-	numberTwo[4] = #60000 1'b1;
-	numberTwo[4] = #10000 1'b0;
-	numberTwo[4] = #10000 1'b1;
-	numberTwo[4] = #10000 1'b0;
-	numberTwo[4] = #30000 1'b1;
-	numberTwo[4] = #10000 1'b0;
-	numberTwo[4] = #10000 1'b1;
+	clock = 1'b0;
+	clock = #10000 1'b1;
+	#10000;
 end 
-// numberTwo[ 3 ]
+
+// reset
 initial
 begin
-	numberTwo[3] = 1'b0;
-	numberTwo[3] = #60000 1'b1;
-	numberTwo[3] = #20000 1'b0;
-	numberTwo[3] = #10000 1'b1;
-	numberTwo[3] = #10000 1'b0;
-	numberTwo[3] = #40000 1'b1;
-	numberTwo[3] = #10000 1'b0;
-	numberTwo[3] = #20000 1'b1;
-	numberTwo[3] = #10000 1'b0;
-	numberTwo[3] = #20000 1'b1;
-	numberTwo[3] = #10000 1'b0;
-	numberTwo[3] = #10000 1'b1;
-	numberTwo[3] = #10000 1'b0;
-	numberTwo[3] = #10000 1'b1;
-	numberTwo[3] = #10000 1'b0;
-	numberTwo[3] = #10000 1'b1;
-	numberTwo[3] = #20000 1'b0;
-	numberTwo[3] = #50000 1'b1;
-	numberTwo[3] = #10000 1'b0;
-	numberTwo[3] = #20000 1'b1;
-	numberTwo[3] = #20000 1'b0;
-	numberTwo[3] = #10000 1'b1;
-	numberTwo[3] = #10000 1'b0;
-	numberTwo[3] = #20000 1'b1;
-	numberTwo[3] = #20000 1'b0;
-	numberTwo[3] = #20000 1'b1;
-	numberTwo[3] = #10000 1'b0;
-	numberTwo[3] = #20000 1'b1;
-	numberTwo[3] = #20000 1'b0;
-	numberTwo[3] = #10000 1'b1;
-	numberTwo[3] = #20000 1'b0;
-	numberTwo[3] = #10000 1'b1;
-	numberTwo[3] = #20000 1'b0;
-end 
-// numberTwo[ 2 ]
-initial
-begin
-	numberTwo[2] = 1'b0;
-	numberTwo[2] = #60000 1'b1;
-	numberTwo[2] = #20000 1'b0;
-	numberTwo[2] = #20000 1'b1;
-	numberTwo[2] = #30000 1'b0;
-	numberTwo[2] = #20000 1'b1;
-	numberTwo[2] = #10000 1'b0;
-	numberTwo[2] = #10000 1'b1;
-	numberTwo[2] = #10000 1'b0;
-	numberTwo[2] = #10000 1'b1;
-	numberTwo[2] = #10000 1'b0;
-	numberTwo[2] = #10000 1'b1;
-	numberTwo[2] = #10000 1'b0;
-	numberTwo[2] = #10000 1'b1;
-	numberTwo[2] = #40000 1'b0;
-	numberTwo[2] = #10000 1'b1;
-	numberTwo[2] = #10000 1'b0;
-	numberTwo[2] = #30000 1'b1;
-	numberTwo[2] = #10000 1'b0;
-	numberTwo[2] = #20000 1'b1;
-	numberTwo[2] = #10000 1'b0;
-	numberTwo[2] = #20000 1'b1;
-	numberTwo[2] = #50000 1'b0;
-	numberTwo[2] = #10000 1'b1;
-	numberTwo[2] = #30000 1'b0;
-	numberTwo[2] = #20000 1'b1;
-	numberTwo[2] = #10000 1'b0;
-	numberTwo[2] = #10000 1'b1;
-	numberTwo[2] = #10000 1'b0;
-	numberTwo[2] = #20000 1'b1;
-	numberTwo[2] = #20000 1'b0;
-end 
-// numberTwo[ 1 ]
-initial
-begin
-	numberTwo[1] = 1'b0;
-	numberTwo[1] = #60000 1'b1;
-	numberTwo[1] = #50000 1'b0;
-	numberTwo[1] = #10000 1'b1;
-	numberTwo[1] = #30000 1'b0;
-	numberTwo[1] = #20000 1'b1;
-	numberTwo[1] = #30000 1'b0;
-	numberTwo[1] = #10000 1'b1;
-	numberTwo[1] = #10000 1'b0;
-	numberTwo[1] = #30000 1'b1;
-	numberTwo[1] = #20000 1'b0;
-	numberTwo[1] = #30000 1'b1;
-	numberTwo[1] = #20000 1'b0;
-	numberTwo[1] = #10000 1'b1;
-	numberTwo[1] = #10000 1'b0;
-	numberTwo[1] = #10000 1'b1;
-	numberTwo[1] = #10000 1'b0;
-	numberTwo[1] = #20000 1'b1;
-	numberTwo[1] = #60000 1'b0;
-	numberTwo[1] = #10000 1'b1;
-	numberTwo[1] = #20000 1'b0;
-	numberTwo[1] = #10000 1'b1;
-	numberTwo[1] = #10000 1'b0;
-	numberTwo[1] = #10000 1'b1;
-	numberTwo[1] = #20000 1'b0;
-	numberTwo[1] = #20000 1'b1;
-	numberTwo[1] = #20000 1'b0;
-end 
-// numberTwo[ 0 ]
-initial
-begin
-	numberTwo[0] = 1'b0;
-	numberTwo[0] = #70000 1'b1;
-	numberTwo[0] = #20000 1'b0;
-	numberTwo[0] = #20000 1'b1;
-	numberTwo[0] = #10000 1'b0;
-	numberTwo[0] = #20000 1'b1;
-	numberTwo[0] = #30000 1'b0;
-	numberTwo[0] = #10000 1'b1;
-	numberTwo[0] = #10000 1'b0;
-	numberTwo[0] = #30000 1'b1;
-	numberTwo[0] = #10000 1'b0;
-	numberTwo[0] = #10000 1'b1;
-	numberTwo[0] = #10000 1'b0;
-	numberTwo[0] = #10000 1'b1;
-	numberTwo[0] = #10000 1'b0;
-	numberTwo[0] = #30000 1'b1;
-	numberTwo[0] = #10000 1'b0;
-	numberTwo[0] = #60000 1'b1;
-	numberTwo[0] = #10000 1'b0;
-	numberTwo[0] = #30000 1'b1;
-	numberTwo[0] = #20000 1'b0;
-	numberTwo[0] = #20000 1'b1;
-	numberTwo[0] = #50000 1'b0;
-	numberTwo[0] = #10000 1'b1;
-	numberTwo[0] = #30000 1'b0;
-	numberTwo[0] = #20000 1'b1;
-	numberTwo[0] = #10000 1'b0;
-end 
-// numberone[ 4 ]
-initial
-begin
-	numberone[4] = 1'b0;
-	numberone[4] = #230000 1'b1;
-	numberone[4] = #10000 1'b0;
-	numberone[4] = #30000 1'b1;
-	numberone[4] = #10000 1'b0;
-	numberone[4] = #30000 1'b1;
-	numberone[4] = #20000 1'b0;
-	numberone[4] = #50000 1'b1;
-	numberone[4] = #20000 1'b0;
-	numberone[4] = #10000 1'b1;
-	numberone[4] = #20000 1'b0;
-	numberone[4] = #60000 1'b1;
-	numberone[4] = #10000 1'b0;
-	numberone[4] = #10000 1'b1;
-	numberone[4] = #10000 1'b0;
-	numberone[4] = #30000 1'b1;
-	numberone[4] = #10000 1'b0;
-end 
-// numberone[ 3 ]
-initial
-begin
-	numberone[3] = 1'b0;
-	numberone[3] = #230000 1'b1;
-	numberone[3] = #40000 1'b0;
-	numberone[3] = #10000 1'b1;
-	numberone[3] = #10000 1'b0;
-	numberone[3] = #40000 1'b1;
-	numberone[3] = #10000 1'b0;
-	numberone[3] = #30000 1'b1;
-	numberone[3] = #70000 1'b0;
-	numberone[3] = #20000 1'b1;
-	numberone[3] = #10000 1'b0;
-	numberone[3] = #20000 1'b1;
-	numberone[3] = #20000 1'b0;
-	numberone[3] = #10000 1'b1;
-	numberone[3] = #20000 1'b0;
-	numberone[3] = #10000 1'b1;
-	numberone[3] = #20000 1'b0;
-end 
-// numberone[ 2 ]
-initial
-begin
-	numberone[2] = 1'b0;
-	numberone[2] = #240000 1'b1;
-	numberone[2] = #30000 1'b0;
-	numberone[2] = #20000 1'b1;
-	numberone[2] = #60000 1'b0;
-	numberone[2] = #10000 1'b1;
-	numberone[2] = #20000 1'b0;
-	numberone[2] = #40000 1'b1;
-	numberone[2] = #50000 1'b0;
-	numberone[2] = #20000 1'b1;
-	numberone[2] = #10000 1'b0;
-	numberone[2] = #10000 1'b1;
-	numberone[2] = #10000 1'b0;
-	numberone[2] = #20000 1'b1;
-	numberone[2] = #20000 1'b0;
-end 
-// numberone[ 1 ]
-initial
-begin
-	numberone[1] = 1'b0;
-	numberone[1] = #220000 1'b1;
-	numberone[1] = #20000 1'b0;
-	numberone[1] = #50000 1'b1;
-	numberone[1] = #10000 1'b0;
-	numberone[1] = #40000 1'b1;
-	numberone[1] = #10000 1'b0;
-	numberone[1] = #10000 1'b1;
-	numberone[1] = #10000 1'b0;
-	numberone[1] = #40000 1'b1;
-	numberone[1] = #30000 1'b0;
-	numberone[1] = #10000 1'b1;
-	numberone[1] = #20000 1'b0;
-	numberone[1] = #10000 1'b1;
-	numberone[1] = #10000 1'b0;
-	numberone[1] = #10000 1'b1;
-	numberone[1] = #20000 1'b0;
-	numberone[1] = #20000 1'b1;
-	numberone[1] = #20000 1'b0;
-end 
-// numberone[ 0 ]
-initial
-begin
-	numberone[0] = 1'b0;
-	numberone[0] = #230000 1'b1;
-	numberone[0] = #30000 1'b0;
-	numberone[0] = #20000 1'b1;
-	numberone[0] = #50000 1'b0;
-	numberone[0] = #30000 1'b1;
-	numberone[0] = #10000 1'b0;
-	numberone[0] = #30000 1'b1;
-	numberone[0] = #10000 1'b0;
-	numberone[0] = #10000 1'b1;
-	numberone[0] = #10000 1'b0;
-	numberone[0] = #20000 1'b1;
-	numberone[0] = #50000 1'b0;
-	numberone[0] = #10000 1'b1;
-	numberone[0] = #30000 1'b0;
-	numberone[0] = #20000 1'b1;
-	numberone[0] = #10000 1'b0;
+	reset = 1'b0;
 end 
 endmodule
 

@@ -132,7 +132,6 @@ module processor(
     //ALU 
     assign reg_outA = data_readRegA;
     assign reg_outB = ALUinB? sign_extend : data_readRegB;
-    assign alu_result = address_dmem;
     assign overflow_dta= R_add? 32'd1:R_sub? 32'd3:addi? 32'd2:32'd0;
     alu alu_dtapath(.data_operandA(reg_outA), .data_operandB(reg_outB), .ctrl_ALUopcode(ALUop),
 			.ctrl_shiftamt(shamt), .data_result(alu_result), .isNotEqual(dummy), .isLessThan(dummy), .overflow(overflow));

@@ -1,0 +1,861 @@
+Analysis & Synthesis report for test
+Thu Nov 03 22:31:24 2022
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Port Connectivity Checks: "regfile:reg1"
+ 11. Port Connectivity Checks: "alu:alu_dtapath"
+ 12. Port Connectivity Checks: "ctrl_sig:comb_48|getSig:comb_3"
+ 13. Port Connectivity Checks: "ctrl_sig:comb_48"
+ 14. Port Connectivity Checks: "alu:comb_3"
+ 15. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[31].pc_dffe"
+ 16. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[30].pc_dffe"
+ 17. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[29].pc_dffe"
+ 18. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[28].pc_dffe"
+ 19. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[27].pc_dffe"
+ 20. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[26].pc_dffe"
+ 21. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[25].pc_dffe"
+ 22. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[24].pc_dffe"
+ 23. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[23].pc_dffe"
+ 24. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[22].pc_dffe"
+ 25. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[21].pc_dffe"
+ 26. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[20].pc_dffe"
+ 27. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[19].pc_dffe"
+ 28. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[18].pc_dffe"
+ 29. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[17].pc_dffe"
+ 30. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[16].pc_dffe"
+ 31. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[15].pc_dffe"
+ 32. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[14].pc_dffe"
+ 33. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[13].pc_dffe"
+ 34. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[12].pc_dffe"
+ 35. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[11].pc_dffe"
+ 36. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[10].pc_dffe"
+ 37. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[9].pc_dffe"
+ 38. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[8].pc_dffe"
+ 39. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[7].pc_dffe"
+ 40. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[6].pc_dffe"
+ 41. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[5].pc_dffe"
+ 42. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[4].pc_dffe"
+ 43. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[3].pc_dffe"
+ 44. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[2].pc_dffe"
+ 45. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[1].pc_dffe"
+ 46. Port Connectivity Checks: "pc:pc1|dffe_ref:pc[0].pc_dffe"
+ 47. Post-Synthesis Netlist Statistics for Top Partition
+ 48. Elapsed Time Per Partition
+ 49. Analysis & Synthesis Messages
+ 50. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Nov 03 22:31:24 2022       ;
+; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                      ; test                                        ;
+; Top-level Entity Name              ; processor                                   ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 81                                          ;
+;     Total combinational functions  ; 81                                          ;
+;     Dedicated logic registers      ; 12                                          ;
+; Total registers                    ; 12                                          ;
+; Total pins                         ; 235                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; processor          ; test               ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                        ;
++----------------------------------+-----------------+------------------------+---------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path          ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------+---------+
+; regfile.v                        ; yes             ; User Verilog HDL File  ; C:/Users/vcm/Desktop/test/regfile.v   ;         ;
+; processor.v                      ; yes             ; User Verilog HDL File  ; C:/Users/vcm/Desktop/test/processor.v ;         ;
+; pc.v                             ; yes             ; User Verilog HDL File  ; C:/Users/vcm/Desktop/test/pc.v        ;         ;
+; getSig.v                         ; yes             ; User Verilog HDL File  ; C:/Users/vcm/Desktop/test/getSig.v    ;         ;
+; dffe.v                           ; yes             ; User Verilog HDL File  ; C:/Users/vcm/Desktop/test/dffe.v      ;         ;
+; ctrl_sig.v                       ; yes             ; User Verilog HDL File  ; C:/Users/vcm/Desktop/test/ctrl_sig.v  ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/vcm/Desktop/test/alu.v       ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------+---------+
+
+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 81               ;
+;                                             ;                  ;
+; Total combinational functions               ; 81               ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 34               ;
+;     -- 3 input functions                    ; 34               ;
+;     -- <=2 input functions                  ; 13               ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 40               ;
+;     -- arithmetic mode                      ; 41               ;
+;                                             ;                  ;
+; Total registers                             ; 12               ;
+;     -- Dedicated logic registers            ; 12               ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 235              ;
+;                                             ;                  ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; q_imem[31]~input ;
+; Maximum fan-out                             ; 34               ;
+; Total fan-out                               ; 633              ;
+; Average fan-out                             ; 1.12             ;
++---------------------------------------------+------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                 ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
+; |processor                      ; 81 (32)             ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 235  ; 0            ; |processor                                ; processor   ; work         ;
+;    |alu:alu_dtapath|            ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|alu:alu_dtapath                ; alu         ; work         ;
+;    |ctrl_sig:comb_48|           ; 5 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|ctrl_sig:comb_48               ; ctrl_sig    ; work         ;
+;       |getSig:comb_3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|ctrl_sig:comb_48|getSig:comb_3 ; getSig      ; work         ;
+;    |pc:pc1|                     ; 12 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1                         ; pc          ; work         ;
+;       |dffe_ref:pc[0].pc_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[0].pc_dffe  ; dffe_ref    ; work         ;
+;       |dffe_ref:pc[10].pc_dffe| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[10].pc_dffe ; dffe_ref    ; work         ;
+;       |dffe_ref:pc[11].pc_dffe| ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[11].pc_dffe ; dffe_ref    ; work         ;
+;       |dffe_ref:pc[1].pc_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[1].pc_dffe  ; dffe_ref    ; work         ;
+;       |dffe_ref:pc[2].pc_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[2].pc_dffe  ; dffe_ref    ; work         ;
+;       |dffe_ref:pc[3].pc_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[3].pc_dffe  ; dffe_ref    ; work         ;
+;       |dffe_ref:pc[4].pc_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[4].pc_dffe  ; dffe_ref    ; work         ;
+;       |dffe_ref:pc[5].pc_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[5].pc_dffe  ; dffe_ref    ; work         ;
+;       |dffe_ref:pc[6].pc_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[6].pc_dffe  ; dffe_ref    ; work         ;
+;       |dffe_ref:pc[7].pc_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[7].pc_dffe  ; dffe_ref    ; work         ;
+;       |dffe_ref:pc[8].pc_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[8].pc_dffe  ; dffe_ref    ; work         ;
+;       |dffe_ref:pc[9].pc_dffe|  ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|pc:pc1|dffe_ref:pc[9].pc_dffe  ; dffe_ref    ; work         ;
++---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------+
+; Registers Removed During Synthesis                          ;
++----------------------------------------+--------------------+
+; Register name                          ; Reason for Removal ;
++----------------------------------------+--------------------+
+; pc:pc1|dffe_ref:pc[12].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[13].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[14].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[15].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[16].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[17].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[18].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[19].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[20].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[21].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[22].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[23].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[24].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[25].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[26].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[27].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[28].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[29].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[30].pc_dffe|q       ; Lost fanout        ;
+; pc:pc1|dffe_ref:pc[31].pc_dffe|q       ; Lost fanout        ;
+; Total Number of Removed Registers = 20 ;                    ;
++----------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 12    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 12    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "regfile:reg1"                                                                                                                                                                                     ;
++---------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                                                                                                                            ;
++---------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; ctrl_writeReg       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (5 bits) it drives.  The 27 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; ctrl_writeReg[4..1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; ctrl_writeReg[0]    ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; ctrl_readRegB       ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; data_writeReg       ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "data_writeReg[31..1]" will be connected to GND.                            ;
+; data_writeReg       ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; data_readRegA       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
+; data_readRegB       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++---------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "alu:alu_dtapath"     ;
++---------------+-------+----------+--------------+
+; Port          ; Type  ; Severity ; Details      ;
++---------------+-------+----------+--------------+
+; ctrl_shiftamt ; Input ; Info     ; Stuck at GND ;
++---------------+-------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ctrl_sig:comb_48|getSig:comb_3"                                                      ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; R_add ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R_sub ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R_and ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R_or  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R_sll ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; R_sra ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ctrl_sig:comb_48"                                                                    ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; ALUop ; Input  ; Info     ; Stuck at GND                                                                        ;
+; Rdst  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; RWd   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:comb_3"                                                                                                                                                           ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                 ; Type   ; Severity ; Details                                                                                                                                               ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data_operandB[31..1] ; Input  ; Info     ; Stuck at GND                                                                                                                                          ;
+; data_operandB[0]     ; Input  ; Info     ; Stuck at VCC                                                                                                                                          ;
+; ctrl_ALUopcode       ; Input  ; Info     ; Stuck at GND                                                                                                                                          ;
+; ctrl_shiftamt        ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (5 bits) it drives.  Extra input bit(s) "ctrl_shiftamt[4..1]" will be connected to GND. ;
+; ctrl_shiftamt        ; Input  ; Info     ; Stuck at GND                                                                                                                                          ;
+; isNotEqual           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
+; isLessThan           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
+; overflow             ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
++----------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[31].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[30].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[29].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[28].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[27].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[26].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[25].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[24].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[23].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[22].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[21].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[20].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[19].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[18].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[17].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[16].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[15].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[14].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[13].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[12].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[11].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[10].pc_dffe" ;
++------+-------+----------+----------------------------------+
+; Port ; Type  ; Severity ; Details                          ;
++------+-------+----------+----------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                     ;
++------+-------+----------+----------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[9].pc_dffe" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[8].pc_dffe" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[7].pc_dffe" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[6].pc_dffe" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[5].pc_dffe" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[4].pc_dffe" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[3].pc_dffe" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[2].pc_dffe" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[1].pc_dffe" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "pc:pc1|dffe_ref:pc[0].pc_dffe" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 235                         ;
+; cycloneiii_ff         ; 12                          ;
+;     CLR               ; 12                          ;
+; cycloneiii_lcell_comb ; 82                          ;
+;     arith             ; 41                          ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 32                          ;
+;     normal            ; 41                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 34                          ;
+;                       ;                             ;
+; Max LUT depth         ; 6.10                        ;
+; Average LUT depth     ; 3.64                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Thu Nov 03 22:31:08 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file two_to_four_decoder.v
+    Info (12023): Found entity 1: two_to_four_decoder File: C:/Users/vcm/Desktop/test/two_to_four_decoder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file three_to_eight_decoder.v
+    Info (12023): Found entity 1: three_to_eight_decoder File: C:/Users/vcm/Desktop/test/three_to_eight_decoder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file sx.v
+    Info (12023): Found entity 1: sx File: C:/Users/vcm/Desktop/test/sx.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file skeleton.v
+    Info (12023): Found entity 1: skeleton File: C:/Users/vcm/Desktop/test/skeleton.v Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file sixteen_bit_adder.v
+    Info (12023): Found entity 1: sixteen_bit_adder File: C:/Users/vcm/Desktop/test/sixteen_bit_adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regfile.v
+    Info (12023): Found entity 1: regfile File: C:/Users/vcm/Desktop/test/regfile.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file processor.v
+    Info (12023): Found entity 1: processor File: C:/Users/vcm/Desktop/test/processor.v Line: 50
+Info (12021): Found 1 design units, including 1 entities, in source file pc.v
+    Info (12023): Found entity 1: pc File: C:/Users/vcm/Desktop/test/pc.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file m21_32_bit.v
+    Info (12023): Found entity 1: m21_32_bit File: C:/Users/vcm/Desktop/test/m21_32_bit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file m21.v
+    Info (12023): Found entity 1: m21 File: C:/Users/vcm/Desktop/test/m21.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file imem.v
+    Info (12023): Found entity 1: imem File: C:/Users/vcm/Desktop/test/imem.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file getsig.v
+    Info (12023): Found entity 1: getSig File: C:/Users/vcm/Desktop/test/getSig.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
+    Info (12023): Found entity 1: full_adder File: C:/Users/vcm/Desktop/test/full_adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file four_bit_adder.v
+    Info (12023): Found entity 1: four_bit_adder File: C:/Users/vcm/Desktop/test/four_bit_adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file five_to_thirtytwo_decoder.v
+    Info (12023): Found entity 1: five_to_thirtytwo_decoder File: C:/Users/vcm/Desktop/test/five_to_thirtytwo_decoder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file eight_bit_adder.v
+    Info (12023): Found entity 1: eight_bit_adder File: C:/Users/vcm/Desktop/test/eight_bit_adder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
+    Info (12023): Found entity 1: dmem File: C:/Users/vcm/Desktop/test/dmem.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file dffe.v
+    Info (12023): Found entity 1: dffe_ref File: C:/Users/vcm/Desktop/test/dffe.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ctrl_sig.v
+    Info (12023): Found entity 1: ctrl_sig File: C:/Users/vcm/Desktop/test/ctrl_sig.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file csa.v
+    Info (12023): Found entity 1: csa File: C:/Users/vcm/Desktop/test/csa.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cmp.v
+    Info (12023): Found entity 1: cmp File: C:/Users/vcm/Desktop/test/cmp.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clock_div4.v
+    Info (12023): Found entity 1: clk_div4 File: C:/Users/vcm/Desktop/test/clock_div4.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clock_div2.v
+    Info (12023): Found entity 1: clock_div2 File: C:/Users/vcm/Desktop/test/clock_div2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: alu File: C:/Users/vcm/Desktop/test/alu.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at processor.v(105): created implicit net for "isNotEqual" File: C:/Users/vcm/Desktop/test/processor.v Line: 105
+Warning (10236): Verilog HDL Implicit Net warning at processor.v(105): created implicit net for "isLessThan" File: C:/Users/vcm/Desktop/test/processor.v Line: 105
+Warning (10236): Verilog HDL Implicit Net warning at processor.v(135): created implicit net for "overflow_dta" File: C:/Users/vcm/Desktop/test/processor.v Line: 135
+Warning (10236): Verilog HDL Implicit Net warning at four_bit_adder.v(8): created implicit net for "w1" File: C:/Users/vcm/Desktop/test/four_bit_adder.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at eight_bit_adder.v(8): created implicit net for "w1" File: C:/Users/vcm/Desktop/test/eight_bit_adder.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at ctrl_sig.v(6): created implicit net for "R_add" File: C:/Users/vcm/Desktop/test/ctrl_sig.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at ctrl_sig.v(6): created implicit net for "R_sub" File: C:/Users/vcm/Desktop/test/ctrl_sig.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at ctrl_sig.v(6): created implicit net for "R_and" File: C:/Users/vcm/Desktop/test/ctrl_sig.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at ctrl_sig.v(6): created implicit net for "R_or" File: C:/Users/vcm/Desktop/test/ctrl_sig.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at ctrl_sig.v(6): created implicit net for "R_sll" File: C:/Users/vcm/Desktop/test/ctrl_sig.v Line: 6
+Warning (10236): Verilog HDL Implicit Net warning at ctrl_sig.v(6): created implicit net for "R_sra" File: C:/Users/vcm/Desktop/test/ctrl_sig.v Line: 6
+Critical Warning (10846): Verilog HDL Instantiation warning at processor.v(105): instance has no name File: C:/Users/vcm/Desktop/test/processor.v Line: 105
+Critical Warning (10846): Verilog HDL Instantiation warning at ctrl_sig.v(6): instance has no name File: C:/Users/vcm/Desktop/test/ctrl_sig.v Line: 6
+Critical Warning (10846): Verilog HDL Instantiation warning at processor.v(111): instance has no name File: C:/Users/vcm/Desktop/test/processor.v Line: 111
+Info (12127): Elaborating entity "processor" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at processor.v(101): object "Zeroes" assigned a value but never read File: C:/Users/vcm/Desktop/test/processor.v Line: 101
+Warning (10858): Verilog HDL warning at processor.v(103): object R used but never assigned File: C:/Users/vcm/Desktop/test/processor.v Line: 103
+Warning (10858): Verilog HDL warning at processor.v(103): object addi used but never assigned File: C:/Users/vcm/Desktop/test/processor.v Line: 103
+Warning (10858): Verilog HDL warning at processor.v(103): object lw used but never assigned File: C:/Users/vcm/Desktop/test/processor.v Line: 103
+Warning (10858): Verilog HDL warning at processor.v(103): object R_add used but never assigned File: C:/Users/vcm/Desktop/test/processor.v Line: 103
+Warning (10858): Verilog HDL warning at processor.v(103): object R_sub used but never assigned File: C:/Users/vcm/Desktop/test/processor.v Line: 103
+Warning (10230): Verilog HDL assignment warning at processor.v(135): truncated value with size 32 to match size of target (1) File: C:/Users/vcm/Desktop/test/processor.v Line: 135
+Warning (10030): Net "R" at processor.v(103) has no driver or initial value, using a default initial value '0' File: C:/Users/vcm/Desktop/test/processor.v Line: 103
+Warning (10030): Net "lw" at processor.v(103) has no driver or initial value, using a default initial value '0' File: C:/Users/vcm/Desktop/test/processor.v Line: 103
+Warning (10030): Net "R_add" at processor.v(103) has no driver or initial value, using a default initial value '0' File: C:/Users/vcm/Desktop/test/processor.v Line: 103
+Warning (10030): Net "R_sub" at processor.v(103) has no driver or initial value, using a default initial value '0' File: C:/Users/vcm/Desktop/test/processor.v Line: 103
+Info (12128): Elaborating entity "pc" for hierarchy "pc:pc1" File: C:/Users/vcm/Desktop/test/processor.v Line: 104
+Info (12128): Elaborating entity "dffe_ref" for hierarchy "pc:pc1|dffe_ref:pc[0].pc_dffe" File: C:/Users/vcm/Desktop/test/pc.v Line: 10
+Info (12128): Elaborating entity "alu" for hierarchy "alu:comb_3" File: C:/Users/vcm/Desktop/test/processor.v Line: 105
+Warning (10270): Verilog HDL Case Statement warning at alu.v(25): incomplete case statement has no default case item File: C:/Users/vcm/Desktop/test/alu.v Line: 25
+Info (12128): Elaborating entity "ctrl_sig" for hierarchy "ctrl_sig:comb_48" File: C:/Users/vcm/Desktop/test/processor.v Line: 111
+Info (12128): Elaborating entity "getSig" for hierarchy "ctrl_sig:comb_48|getSig:comb_3" File: C:/Users/vcm/Desktop/test/ctrl_sig.v Line: 6
+Info (12128): Elaborating entity "regfile" for hierarchy "regfile:reg1" File: C:/Users/vcm/Desktop/test/processor.v Line: 144
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ctrl_readRegB[0]" is stuck at GND File: C:/Users/vcm/Desktop/test/processor.v Line: 89
+    Warning (13410): Pin "ctrl_readRegB[1]" is stuck at GND File: C:/Users/vcm/Desktop/test/processor.v Line: 89
+    Warning (13410): Pin "ctrl_readRegB[2]" is stuck at GND File: C:/Users/vcm/Desktop/test/processor.v Line: 89
+    Warning (13410): Pin "ctrl_readRegB[3]" is stuck at GND File: C:/Users/vcm/Desktop/test/processor.v Line: 89
+    Warning (13410): Pin "ctrl_readRegB[4]" is stuck at GND File: C:/Users/vcm/Desktop/test/processor.v Line: 89
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 20 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/vcm/Desktop/test/output_files/test.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 32 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "q_dmem[0]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[1]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[2]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[3]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[4]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[5]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[6]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[7]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[8]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[9]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[10]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[11]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[12]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[13]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[14]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[15]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[16]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[17]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[18]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[19]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[20]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[21]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[22]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[23]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[24]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[25]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[26]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[27]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[28]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[29]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[30]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+    Warning (15610): No output dependent on input pin "q_dmem[31]" File: C:/Users/vcm/Desktop/test/processor.v Line: 85
+Info (21057): Implemented 316 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 130 input pins
+    Info (21059): Implemented 105 output pins
+    Info (21061): Implemented 81 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 67 warnings
+    Info: Peak virtual memory: 4743 megabytes
+    Info: Processing ended: Thu Nov 03 22:31:24 2022
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:22
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/vcm/Desktop/test/output_files/test.map.smsg.
+
+

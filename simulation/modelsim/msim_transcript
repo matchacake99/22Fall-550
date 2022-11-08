@@ -10,26 +10,26 @@
 # Copying C:/intelFPGA/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/test {C:/Users/vcm/Desktop/test/skeleton.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:22:52 on Nov 03,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/test" C:/Users/vcm/Desktop/test/skeleton.v 
-# -- Compiling module skeleton
+# Start time: 14:58:02 on Nov 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v 
+# -- Compiling module skeleton_test
 # 
 # Top level modules:
-# 	skeleton
-# End time: 22:22:52 on Nov 03,2022, Elapsed time: 0:00:00
+# 	skeleton_test
+# End time: 14:58:02 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/test {C:/Users/vcm/Desktop/test/regfile.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/regfile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:22:52 on Nov 03,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/test" C:/Users/vcm/Desktop/test/regfile.v 
+# Start time: 14:58:03 on Nov 08,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/regfile.v 
 # -- Compiling module regfile
-# ** Error: C:/Users/vcm/Desktop/test/regfile.v(17): Declarations not allowed in unnamed block.
-# End time: 22:22:52 on Nov 03,2022, Elapsed time: 0:00:00
+# ** Error: C:/Users/vcm/Desktop/22Fall-550/regfile.v(17): Declarations not allowed in unnamed block.
+# End time: 14:58:03 on Nov 08,2022, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: C:/intelFPGA/17.0/modelsim_ase/win32aloem/vlog failed.
 # Error in macro ./test_run_msim_rtl_verilog.do line 9
 # C:/intelFPGA/17.0/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/test {C:/Users/vcm/Desktop/test/regfile.v}"
+# "vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/regfile.v}"

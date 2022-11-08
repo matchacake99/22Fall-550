@@ -7,26 +7,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/vcm/Desktop/test/simulation/modelsim
-vskeleton
-!s110 1667528572
+Z0 dC:/Users/vcm/Desktop/22Fall-550/simulation/modelsim
+vskeleton_test
+!s110 1667937482
 !i10b 1
-!s100 a2lJifIL`[=_eE`MC4M;k1
-IEET6eU@Z]M0cE9^OzFadO2
+!s100 NOX>HOESiVYMmhMPOSYDl3
+IG6U?Ef@^alJT]3]KfWLnc0
 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1667515494
-8C:/Users/vcm/Desktop/test/skeleton.v
-FC:/Users/vcm/Desktop/test/skeleton.v
+w1667936806
+8C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v
+FC:/Users/vcm/Desktop/22Fall-550/skeleton_test.v
 L0 12
 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1667528572.000000
-!s107 C:/Users/vcm/Desktop/test/skeleton.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/test|C:/Users/vcm/Desktop/test/skeleton.v|
+!s108 1667937482.000000
+!s107 C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v|
 !i113 1
 o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/test
+!s92 -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550
 tCvgOpt 0

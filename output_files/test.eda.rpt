@@ -1,5 +1,5 @@
 EDA Netlist Writer report for test
-Thu Nov 03 22:33:25 2022
+Tue Nov 08 14:51:26 2022
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -37,9 +37,9 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Nov 03 22:33:25 2022 ;
+; EDA Netlist Writer Status ; Successful - Tue Nov 08 14:51:26 2022 ;
 ; Revision Name             ; test                                  ;
-; Top-level Entity Name     ; processor                             ;
+; Top-level Entity Name     ; skeleton_test                         ;
 ; Family                    ; Cyclone IV E                          ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -51,7 +51,8 @@ agreement for further details.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate functional simulation netlist                                                            ; On                        ;
+; Generate functional simulation netlist                                                            ; Off                       ;
+; Time scale                                                                                        ; 1 ps                      ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -66,13 +67,20 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+----------------------------------------------------+
-; Simulation Generated Files                         ;
-+----------------------------------------------------+
-; Generated Files                                    ;
-+----------------------------------------------------+
-; C:/Users/vcm/Desktop/test/simulation/qsim//test.vo ;
-+----------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Simulation Generated Files                                                        ;
++-----------------------------------------------------------------------------------+
+; Generated Files                                                                   ;
++-----------------------------------------------------------------------------------+
+; C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/test_7_1200mv_85c_slow.vo     ;
+; C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/test_7_1200mv_0c_slow.vo      ;
+; C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/test_min_1200mv_0c_fast.vo    ;
+; C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/test.vo                       ;
+; C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/test_7_1200mv_85c_v_slow.sdo  ;
+; C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/test_7_1200mv_0c_v_slow.sdo   ;
+; C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/test_min_1200mv_0c_v_fast.sdo ;
+; C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/test_v.sdo                    ;
++-----------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,28 +89,21 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
-    Info: Your use of Intel Corporation's design tools, logic functions 
-    Info: and other software and tools, and its AMPP partner logic 
-    Info: functions, and any output files from any of the foregoing 
-    Info: (including device programming or simulation files), and any 
-    Info: associated documentation or information are expressly subject 
-    Info: to the terms and conditions of the Intel Program License 
-    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
-    Info: the Intel MegaCore Function License Agreement, or other 
-    Info: applicable license agreement, including, without limitation, 
-    Info: that your use is for the sole purpose of programming logic 
-    Info: devices manufactured by Intel and sold by Intel or its 
-    Info: authorized distributors.  Please refer to the applicable 
-    Info: agreement for further details.
-    Info: Processing started: Thu Nov 03 22:33:24 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/vcm/Desktop/test/simulation/qsim/ test -c test
+    Info: Processing started: Tue Nov 08 14:51:25 2022
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off test -c test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file test.vo in folder "C:/Users/vcm/Desktop/test/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file test_7_1200mv_85c_slow.vo in folder "C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file test_7_1200mv_0c_slow.vo in folder "C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file test_min_1200mv_0c_fast.vo in folder "C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file test.vo in folder "C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file test_7_1200mv_85c_v_slow.sdo in folder "C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file test_7_1200mv_0c_v_slow.sdo in folder "C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file test_min_1200mv_0c_v_fast.sdo in folder "C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file test_v.sdo in folder "C:/Users/vcm/Desktop/22Fall-550/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4632 megabytes
-    Info: Processing ended: Thu Nov 03 22:33:25 2022
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4645 megabytes
+    Info: Processing ended: Tue Nov 08 14:51:27 2022
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

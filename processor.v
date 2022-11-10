@@ -129,7 +129,7 @@ module processor(
     regfile myRegfile(
 	.clock(clock), .ctrl_writeEnable(ctrl_writeEnable), .ctrl_reset(reset), .ctrl_writeReg(ctrl_writeReg),
 	.ctrl_readRegA(ctrl_readRegA), .ctrl_readRegB(ctrl_readRegB), .data_writeReg(data_writeReg), .data_readRegA(data_readRegA),
-	.data_readRegB(data_readRegA)
+	.data_readRegB(data_readRegB)
 );
     
 	 
@@ -148,7 +148,7 @@ module processor(
     assign wren = DMwe;
     assign data = data_readRegB;
     assign data_out = q_dmem;
-	assign data_writeReg = lw? data_out:alu_result;
+	assign data_writeReg = lw? data_out:(R_add|R_sub|addi)? (overflow? overflow_dta: alu_result) : alu_result;
     
 
 	 

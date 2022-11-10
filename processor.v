@@ -102,20 +102,20 @@ module processor(
      wire [16:0] immed;
      wire overflow, R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra, Rwe, Rdst, ALUinB, DMwe, RWd;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
-    alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, dummy, dummy, dummy);   
+    alu alu_pc(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, dummy, dummy, dummy);   
 
     //Insn Mem
     assign address_imem = pc_out[11:0];
     assign insn_out = q_imem;
 
-    ctrl_sig(opcode, ALUopcode, Rwe, Rdst, ALUinB, DMwe, RWd);
+    ctrl_sig my_ctrl_sig(opcode, ALUopcode, Rwe, Rdst, ALUinB, DMwe, RWd);
     assign opcode = insn_out[31:27];
     assign rs = insn_out[21:17];
     assign rt = R? insn_out[16:12]: 5'd0;
     assign rd = insn_out[26:22];
-    assign shamt = R?insn_out[11:7]: 5'd0;;
-    assign ALUopcode = R?insn_out[6:2]: 5'd0;;
-    assign Zeroes = R? insn_out[1:0]: 5'd0;;
+    assign shamt = R?insn_out[11:7]: 5'd0;
+    assign ALUopcode = R?insn_out[6:2]: 5'd0;
+    assign Zeroes = R? insn_out[1:0]: 5'd0;
     assign immed = insn_out[16:0];
     assign sign_extend = {{15{immed[16]}},immed};
 
@@ -126,6 +126,7 @@ module processor(
     assign ctrl_writeReg = (R_add|R_sub|addi)? (overflow? 5'd30: rd) : rd;
     assign ctrl_readRegA = rs;
     assign ctrl_readRegB = R? rt : rd;
+	 
     regfile myRegfile(
 	.clock(clock), .ctrl_writeEnable(ctrl_writeEnable), .ctrl_reset(reset), .ctrl_writeReg(ctrl_writeReg),
 	.ctrl_readRegA(ctrl_readRegA), .ctrl_readRegB(ctrl_readRegB), .data_writeReg(data_writeReg), .data_readRegA(data_readRegA),
@@ -137,7 +138,7 @@ module processor(
     //ALU 
     assign reg_outA = data_readRegA;
     assign reg_outB = ALUinB? sign_extend : data_readRegB;
-    assign overflow_dta= R_add? 32'd1:R_sub? 32'd3:addi? 32'd2:32'd0;
+    assign overflow_dta= R_add? 32'd1:R_sub?32'd3:addi?32'd2:32'd0;
     alu alu_dtapath(.data_operandA(reg_outA), .data_operandB(reg_outB), .ctrl_ALUopcode(ALUopcode),
 			.ctrl_shiftamt(shamt), .data_result(alu_result), .isNotEqual(dummy), .isLessThan(dummy), .overflow(overflow));
     

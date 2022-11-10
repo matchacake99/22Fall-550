@@ -4,23 +4,23 @@ TimeQuest Timing Analyzer Summary
 
 Type  : Slow 1200mV 85C Model Setup 'clock'
 Slack : -2.204
-TNS   : -37.013
+TNS   : -19.223
 
 Type  : Slow 1200mV 85C Model Setup 'clk_div4:pc_clk1|clk_track'
-Slack : -1.160
-TNS   : -10.256
+Slack : -0.979
+TNS   : -6.640
+
+Type  : Slow 1200mV 85C Model Hold 'clk_div4:pc_clk1|clk_track'
+Slack : 0.387
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clock'
 Slack : 0.406
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'clk_div4:pc_clk1|clk_track'
-Slack : 0.408
-TNS   : 0.000
-
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -54.044
+TNS   : -51.351
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_div4:pc_clk1|clk_track'
 Slack : -1.285
@@ -28,38 +28,38 @@ TNS   : -15.420
 
 Type  : Slow 1200mV 0C Model Setup 'clock'
 Slack : -1.907
-TNS   : -31.947
+TNS   : -16.573
 
 Type  : Slow 1200mV 0C Model Setup 'clk_div4:pc_clk1|clk_track'
-Slack : -0.941
-TNS   : -8.130
-
-Type  : Slow 1200mV 0C Model Hold 'clock'
-Slack : 0.364
-TNS   : 0.000
+Slack : -0.780
+TNS   : -5.012
 
 Type  : Slow 1200mV 0C Model Hold 'clk_div4:pc_clk1|clk_track'
-Slack : 0.366
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.363
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -53.252
+TNS   : -50.603
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_div4:pc_clk1|clk_track'
 Slack : -1.285
 TNS   : -15.420
 
 Type  : Fast 1200mV 0C Model Setup 'clock'
-Slack : -0.578
-TNS   : -5.762
+Slack : -0.501
+TNS   : -3.093
 
 Type  : Fast 1200mV 0C Model Setup 'clk_div4:pc_clk1|clk_track'
-Slack : -0.062
-TNS   : -0.084
+Slack : 0.024
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk_div4:pc_clk1|clk_track'
-Slack : 0.185
+Slack : 0.169
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clock'
@@ -68,7 +68,7 @@ TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -25.365
+TNS   : -24.271
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_div4:pc_clk1|clk_track'
 Slack : -1.000

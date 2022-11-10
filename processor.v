@@ -96,26 +96,26 @@ module processor(
     //PC & PC + 4
      wire [31:0] pc_in, pc_out, insn_out, sign_extend;
      wire dummy;
-     wire [4:0] opcode, rd, rs, rt, shamt, ALUop;
-	  wire [31:0] reg_outA, reg_outB, alu_result, data_out;
+     wire [4:0] opcode, rd, rs, rt, shamt, ALUopcode;
+     wire [31:0] reg_outA, reg_outB, alu_result, data_out;
      wire [1:0] Zeroes;
      wire [16:0] immed;
      wire overflow, R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra, Rwe, Rdst, ALUinB, DMwe, RWd;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
-    alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, isNotEqual, isLessThan, dummy);   
+    alu(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, dummy, dummy, dummy);   
 
     //Insn Mem
     assign address_imem = pc_out[11:0];
     assign insn_out = q_imem;
 
-    ctrl_sig(opcode, ALUop, Rwe, Rdst, ALUinB, DMwe, RWd);
+    ctrl_sig(opcode, ALUopcode, Rwe, Rdst, ALUinB, DMwe, RWd);
     assign opcode = insn_out[31:27];
     assign rs = insn_out[21:17];
-    assign rt = R? insn_out[16:12]:5'b00000;
+    assign rt = R? insn_out[16:12]: 5'd0;
     assign rd = insn_out[26:22];
-    assign shamt = R? insn_out[11:7]: 5'b00000;
-    assign ALUop = R? insn_out[6:2]: 5'b00000;
-    assign Zeroes = insn_out[1:0];
+    assign shamt = R?insn_out[11:7]: 5'd0;;
+    assign ALUopcode = R?insn_out[6:2]: 5'd0;;
+    assign Zeroes = R? insn_out[1:0]: 5'd0;;
     assign immed = insn_out[16:0];
     assign sign_extend = {{15{immed[16]}},immed};
 
@@ -123,9 +123,14 @@ module processor(
 
     //RegFile
     assign ctrl_writeEnable = Rwe;
-    assign ctrl_writeReg = rd;
+    assign ctrl_writeReg = (R_add|R_sub|addi)? (overflow? 5'd30: rd) : rd;
     assign ctrl_readRegA = rs;
-    assign ctrl_readRegB = rt;
+    assign ctrl_readRegB = R? rt : rd;
+    regfile myRegfile(
+	.clock(clock), .ctrl_writeEnable(ctrl_writeEnable), .ctrl_reset(reset), .ctrl_writeReg(ctrl_writeReg),
+	.ctrl_readRegA(ctrl_readRegA), .ctrl_readRegB(ctrl_readRegB), .data_writeReg(data_writeReg), .data_readRegA(data_readRegA),
+	.data_readRegB(data_readRegA)
+);
     
 	 
      
@@ -133,24 +138,20 @@ module processor(
     assign reg_outA = data_readRegA;
     assign reg_outB = ALUinB? sign_extend : data_readRegB;
     assign overflow_dta= R_add? 32'd1:R_sub? 32'd3:addi? 32'd2:32'd0;
-    alu alu_dtapath(.data_operandA(reg_outA), .data_operandB(reg_outB), .ctrl_ALUopcode(ALUop),
+    alu alu_dtapath(.data_operandA(reg_outA), .data_operandB(reg_outB), .ctrl_ALUopcode(ALUopcode),
 			.ctrl_shiftamt(shamt), .data_result(alu_result), .isNotEqual(dummy), .isLessThan(dummy), .overflow(overflow));
     
-    //Write to 
-    wire[31:0] s1,s2;
-    wire enableTwo;
-	regfile reg1(.clock(clock), .ctrl_writeEnable(overflow), .ctrl_reset(reset), .ctrl_writeReg(32'h001E),
-	.ctrl_readRegA(rs), .ctrl_readRegB(rt), .data_writeReg(overflow_dta), .data_readRegA(s1),
-	.data_readRegB(s2));
+
 
     //Data Mem
     assign address_dmem = alu_result[11:0];
     assign wren = DMwe;
     assign data = data_readRegB;
     assign data_out = q_dmem;
-	 assign data_writeReg = lw? data_out:alu_result;
+	assign data_writeReg = lw? data_out:alu_result;
     
 
 	 
 
 endmodule
+

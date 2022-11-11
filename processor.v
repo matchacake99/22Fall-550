@@ -70,20 +70,6 @@ module processor(
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
     data_readRegB                   // I: Data from port B of regfile
-
-/*****delete**********/
-    immed,
-    sign_extend,
-    pc_out, 
-    pc_in,
-    R, 
-    addi, 
-    lw, 
-    sw, 
-    R_add, 
-    R_sub,
-    overflow_dta, 
-    overflow
 );
     // Control signals
     input clock, reset;
@@ -168,21 +154,7 @@ module processor(
     assign data_out = q_dmem;
 	assign data_writeReg = lw? data_out:(R_add|R_sub|addi)? (overflow? overflow_dta: alu_result) : alu_result;
     
-    /*Additional*/
-    output [16:0] immed;
-    output [31:0] sign_extend;
 
-    output pc_out;
-    output pc_in;
-    output R;
-    output addi;
-    output lw;
-    output sw; 
-    output R_add;
-    output R_sub;
-
-    output [31:0] overflow_dta;
-    output overflow;
 	 
 
 endmodule

@@ -59,6 +59,10 @@ set_global_assignment -name EDA_TEST_BENCH_NAME skeleton_test_tb -section_id eda
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id skeleton_test_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME skeleton_test_tb -section_id skeleton_test_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE skeleton_test_tb.v -section_id skeleton_test_tb
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SOURCE_FILE imem.v.bak
 set_global_assignment -name MIF_FILE mif_outputs/halfTestCases.mif
 set_global_assignment -name MIF_FILE mif_outputs/basic_test.mif
 set_global_assignment -name VERILOG_FILE two_to_four_decoder.v
@@ -103,12 +107,8 @@ set_global_assignment -name SOURCE_FILE basic_test.s
 set_global_assignment -name VERILOG_FILE arithmetic_right_shift_32_bit.v
 set_global_assignment -name VERILOG_FILE alu.v
 set_global_assignment -name VERILOG_FILE adder_1.v
-set_global_assignment -name VERILOG_FILE imem.v
-set_global_assignment -name VERILOG_FILE dmem.v
 set_global_assignment -name QIP_FILE imem.qip
 set_global_assignment -name QIP_FILE dmem.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE dmem.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/vcm/Desktop/22Fall-550/simulation/modelsim
 vadder_1
-Z1 !s110 1668130440
+Z1 !s110 1668183884
 !i10b 1
 !s100 EN0RTbRLN3`PQ[J2h0gz_2
 Ih<Yl2>W]PfN9lVL]b3ZCK0
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1668130439.000000
+Z4 !s108 1668183884.000000
 !s107 C:/Users/vcm/Desktop/22Fall-550/adder_1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/adder_1.v|
 !i113 1
@@ -31,7 +31,7 @@ Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550
 Z7 tCvgOpt 0
 valu
-Z8 !s110 1668130439
+R1
 !i10b 1
 !s100 _=YlYjajmC5295loD=llI0
 I59cX7JV@nPFgjFTac7b;d2
@@ -53,7 +53,7 @@ R5
 R6
 R7
 varithmetic_right_shift_32_bit
-R8
+Z8 !s110 1668183883
 !i10b 1
 !s100 T;fI4]IF21E;6`3WSRF9I1
 I>d7mCkFMkLjeERbA8Wd3>2
@@ -67,7 +67,7 @@ R3
 r1
 !s85 0
 31
-R4
+Z9 !s108 1668183883.000000
 !s107 C:/Users/vcm/Desktop/22Fall-550/arithmetic_right_shift_32_bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/arithmetic_right_shift_32_bit.v|
 !i113 1
@@ -81,7 +81,7 @@ R8
 IPP;JVieUVeQ_=2o6iK0iF3
 R2
 R0
-Z9 w1667515494
+Z10 w1667515494
 8C:/Users/vcm/Desktop/22Fall-550/clock_div4.v
 FC:/Users/vcm/Desktop/22Fall-550/clock_div4.v
 L0 1
@@ -89,7 +89,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/Users/vcm/Desktop/22Fall-550/clock_div4.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/clock_div4.v|
 !i113 1
@@ -111,7 +111,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/Users/vcm/Desktop/22Fall-550/CSA_32_bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/CSA_32_bit.v|
 !i113 1
@@ -122,11 +122,11 @@ n@c@s@a_32_bit
 vctrl_sig
 R8
 !i10b 1
-!s100 VW1f>C0N527R1fdb`G`hJ1
-I@aGI@bV[;SJ7_mRZVOT;V1
+!s100 jFSc7]39gBkl=oTYMDnZ40
+If>hUl4Wm9<K_aJ3[b>2cE2
 R2
 R0
-w1668118606
+Z11 w1668135466
 8C:/Users/vcm/Desktop/22Fall-550/ctrl_sig.v
 FC:/Users/vcm/Desktop/22Fall-550/ctrl_sig.v
 L0 1
@@ -134,7 +134,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/Users/vcm/Desktop/22Fall-550/ctrl_sig.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/ctrl_sig.v|
 !i113 1
@@ -148,7 +148,7 @@ R8
 I46@bk`S=nD8P5^>zYKSe82
 R2
 R0
-R9
+R10
 8C:/Users/vcm/Desktop/22Fall-550/dffe.v
 FC:/Users/vcm/Desktop/22Fall-550/dffe.v
 L0 1
@@ -156,7 +156,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/Users/vcm/Desktop/22Fall-550/dffe.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/dffe.v|
 !i113 1
@@ -166,19 +166,19 @@ R7
 vdmem
 R1
 !i10b 1
-!s100 @hOHUZED@9fCeDDW:]9_92
-Igdkc3TXVBT?70bncF]fH12
+!s100 Ig2U5z`UQ`aKkLjgP8hjc1
+IFd8N:k`g84bdD4O[JhPMl0
 R2
 R0
-w1668122862
+w1668183468
 8C:/Users/vcm/Desktop/22Fall-550/dmem.v
 FC:/Users/vcm/Desktop/22Fall-550/dmem.v
-Z10 L0 40
+Z12 L0 40
 R3
 r1
 !s85 0
 31
-Z11 !s108 1668130440.000000
+R4
 !s107 C:/Users/vcm/Desktop/22Fall-550/dmem.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/dmem.v|
 !i113 1
@@ -188,11 +188,11 @@ R7
 vgetSig
 R8
 !i10b 1
-!s100 @W2A;bkO5Cm<1FZ9m4cnR1
-IA9@28P14eXF>CDnT;<j<?2
+!s100 n^dILM3[k<OUSH696<=AR0
+I;bT?n>9EiZ]W:cGFYHjK]1
 R2
 R0
-R9
+R11
 8C:/Users/vcm/Desktop/22Fall-550/getSig.v
 FC:/Users/vcm/Desktop/22Fall-550/getSig.v
 L0 1
@@ -200,7 +200,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/Users/vcm/Desktop/22Fall-550/getSig.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/getSig.v|
 !i113 1
@@ -211,19 +211,19 @@ nget@sig
 vimem
 R1
 !i10b 1
-!s100 oXT_z12PE`7[4NfMT[3R61
-IQ0[nTiX9X6fMOWzi2k=Kj1
+!s100 HZlg7;kPXVPXPdkWBle5]3
+IK=VhCQcHci_bDXR6i[IJB3
 R2
 R0
-w1668124857
+w1668183840
 8C:/Users/vcm/Desktop/22Fall-550/imem.v
 FC:/Users/vcm/Desktop/22Fall-550/imem.v
-R10
+R12
 R3
 r1
 !s85 0
 31
-R11
+R4
 !s107 C:/Users/vcm/Desktop/22Fall-550/imem.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/imem.v|
 !i113 1
@@ -245,7 +245,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/Users/vcm/Desktop/22Fall-550/judgeEqual.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/judgeEqual.v|
 !i113 1
@@ -268,7 +268,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/Users/vcm/Desktop/22Fall-550/judgeLess.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/judgeLess.v|
 !i113 1
@@ -277,7 +277,7 @@ R6
 R7
 njudge@less
 vleft_shift_32_bit
-Z12 !s110 1668130438
+R8
 !i10b 1
 !s100 0YVW;4=C[8VIfNA<K8GW`1
 Ijb1c<8H8KGGbfOhSYhEiH3
@@ -291,7 +291,7 @@ R3
 r1
 !s85 0
 31
-Z13 !s108 1668130438.000000
+R9
 !s107 C:/Users/vcm/Desktop/22Fall-550/left_shift_32_bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/left_shift_32_bit.v|
 !i113 1
@@ -299,7 +299,7 @@ R5
 R6
 R7
 vm21
-R12
+R8
 !i10b 1
 !s100 9CRN8c;F;`PG`nTkF>DbB0
 I[aVg]9h31S`<]o=89<Xag1
@@ -313,7 +313,7 @@ R3
 r1
 !s85 0
 31
-R13
+Z13 !s108 1668183882.000000
 !s107 C:/Users/vcm/Desktop/22Fall-550/m21.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/m21.v|
 !i113 1
@@ -321,7 +321,7 @@ R5
 R6
 R7
 vm21_32_bit
-R12
+Z14 !s110 1668183882
 !i10b 1
 !s100 1d2=j7Xd7L0JH^0]>nm7A0
 IU=zEh@@>RXT4ETWS9JJ]g2
@@ -343,7 +343,7 @@ R5
 R6
 R7
 vm81
-R12
+R14
 !i10b 1
 !s100 UC?@<gWMgcF;MfbKE`=>91
 Im=LoBO>G3mcoFPo1ZDJ_Z3
@@ -365,7 +365,7 @@ R5
 R6
 R7
 vnot_32_bit
-R12
+R14
 !i10b 1
 !s100 d^UD:hlSM@a5zb7LMnTjC0
 IdRE2i0kRlR`ILz97__`Zf0
@@ -387,13 +387,13 @@ R5
 R6
 R7
 vpc
-R12
+R14
 !i10b 1
 !s100 =8Xd13P_QeD4@HWF>DS`G3
 I2DLD0>M@I_i5KdFhFQniH2
 R2
 R0
-R9
+R10
 8C:/Users/vcm/Desktop/22Fall-550/pc.v
 FC:/Users/vcm/Desktop/22Fall-550/pc.v
 L0 1
@@ -409,13 +409,13 @@ R5
 R6
 R7
 vprocessor
-R12
+R14
 !i10b 1
-!s100 NU?Y5Fah:PkY2bCPz4Y;S1
-Ij1_9cc8oNV;3Mk63GhE;@2
+!s100 >c=:DYF536FLzmPZI^jnU1
+IWTibY1AHGEkHP;:=LGzI[0
 R2
 R0
-w1668130292
+w1668182720
 8C:/Users/vcm/Desktop/22Fall-550/processor.v
 FC:/Users/vcm/Desktop/22Fall-550/processor.v
 L0 50
@@ -423,7 +423,7 @@ R3
 r1
 !s85 0
 31
-Z14 !s108 1668130437.000000
+R13
 !s107 C:/Users/vcm/Desktop/22Fall-550/processor.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/processor.v|
 !i113 1
@@ -431,7 +431,7 @@ R5
 R6
 R7
 vRCA_16
-Z15 !s110 1668130437
+R14
 !i10b 1
 !s100 =Ri7NldZA^mhM@BR[;_1C0
 Io]=l7oeoJo7SQn>W`KdOR1
@@ -445,7 +445,7 @@ R3
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/vcm/Desktop/22Fall-550/RCA_16.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/RCA_16.v|
 !i113 1
@@ -454,7 +454,7 @@ R6
 R7
 n@r@c@a_16
 vregfile
-R15
+R14
 !i10b 1
 !s100 DmD;oHDODD3i3BzzlYW_;3
 IN8;OW1Yi2D_Qd@I=AIaTh1
@@ -468,7 +468,7 @@ R3
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/vcm/Desktop/22Fall-550/regfile.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/regfile.v|
 !i113 1
@@ -476,13 +476,13 @@ R5
 R6
 R7
 vskeleton_test
-R15
+R14
 !i10b 1
-!s100 NOX>HOESiVYMmhMPOSYDl3
-IG6U?Ef@^alJT]3]KfWLnc0
+!s100 OffM6Pmnad:2:dbB25=U@1
+ITjR^A8F`=E0f9RH>oRYB52
 R2
 R0
-w1667936806
+w1668182721
 8C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v
 FC:/Users/vcm/Desktop/22Fall-550/skeleton_test.v
 L0 12
@@ -490,7 +490,7 @@ R3
 r1
 !s85 0
 31
-R14
+R13
 !s107 C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v|
 !i113 1
@@ -504,7 +504,7 @@ R1
 ISlnA[[7EHLVL[MHP]^:>h3
 R2
 R0
-w1667937281
+w1668182722
 8C:/Users/vcm/Desktop/22Fall-550/skeleton_test_tb.v
 FC:/Users/vcm/Desktop/22Fall-550/skeleton_test_tb.v
 L0 3
@@ -512,7 +512,7 @@ R3
 r1
 !s85 0
 31
-R11
+R4
 !s107 C:/Users/vcm/Desktop/22Fall-550/skeleton_test_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/vcm/Desktop/22Fall-550|C:/Users/vcm/Desktop/22Fall-550/skeleton_test_tb.v|
 !i113 1

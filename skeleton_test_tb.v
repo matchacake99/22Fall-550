@@ -13,20 +13,6 @@ module skeleton_test_tb();
     wire [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
     wire [31:0] data_writeReg;
     wire [31:0] data_readRegA, data_readRegB;
-
-    wire [16:0] immed;
-    wire [31:0] sign_extend;
-    wire pc_out, 
-    pc_in,
-    R, 
-    addi, 
-    lw, 
-    sw, 
-    R_add, 
-    R_sub;
-
-    wire [31:0] overflow_dta;
-    wire overflow;
 	 integer i;
 
 

@@ -70,6 +70,20 @@ module processor(
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
     data_readRegB                   // I: Data from port B of regfile
+
+/*****delete**********/
+    immed,
+    sign_extend,
+    pc_out, 
+    pc_in,
+    R, 
+    addi, 
+    lw, 
+    sw, 
+    R_add, 
+    R_sub,
+    overflow_dta, 
+    overflow
 );
     // Control signals
     input clock, reset;

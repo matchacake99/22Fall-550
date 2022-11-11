@@ -1,5 +1,6 @@
 module getSig(opcode, ALUop, R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra);
     input [4:0]opcode, ALUop;
+    wire R;
     output R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra;
 
     assign R = (~opcode[4])&(~opcode[3])&(~opcode[2])&(~opcode[1])&(~opcode[0]);//00000

@@ -11,7 +11,19 @@
 
 module skeleton_test(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
 address_imem,q_imem,address_dmem,data,wren,q_dmem,ctrl_writeEnable,ctrl_writeReg,ctrl_readRegA, ctrl_readRegB,
-data_writeReg,data_readRegA, data_readRegB);
+data_writeReg,data_readRegA, data_readRegB,
+    immed,
+    sign_extend,
+    pc_out, 
+    pc_in,
+    R, 
+    addi, 
+    lw, 
+    sw, 
+    R_add, 
+    R_sub,
+    overflow_dta, 
+    overflow);
 
     input clock, reset;
 
@@ -47,7 +59,7 @@ data_writeReg,data_readRegA, data_readRegB);
     /** DMEM **/
     // Figure out how to generate a Quartus syncram component and commit the generated verilog file.
     // Make sure you configure it correctly!
-   output [11:0] address_dmem;
+    output [11:0] address_dmem;
     output [31:0] data;
     output wren;
     output [31:0] q_dmem;
@@ -107,6 +119,34 @@ data_writeReg,data_readRegA, data_readRegB);
         data_readRegA,                  // I: Data from port A of regfile
         data_readRegB
 	  // I: Data from port B of regfile
-    );
+    immed,
+    sign_extend,
+    pc_out, 
+    pc_in,
+    R, 
+    addi, 
+    lw, 
+    sw, 
+    R_add, 
+    R_sub,
+    overflow_dta,
+    overflow);
+
+    /*Additional*/
+    output [16:0] immed;
+    output [31:0] sign_extend;
+
+    output pc_out;
+    output pc_in;
+    output R;
+    output addi;
+    output lw;
+    output sw; 
+    output R_add;
+    output R_sub;
+
+    output [31:0] overflow_dta;
+    output overflow;
+    
 
 endmodule

@@ -91,15 +91,15 @@ module processor(
     input [31:0] data_readRegA, data_readRegB;
 
 /* YOUR CODE STARTS HERE */
-
-
-    //PC & PC + 4
-     wire [31:0] pc_in, pc_out, insn_out, sign_extend;
-     wire dummy;
+	  wire dummy;
      wire [4:0] opcode, rd, rs, rt, shamt, ALUopcode;
      wire [31:0] reg_outA, reg_outB, alu_result, data_out;
      wire [1:0] Zeroes;
      wire [16:0] immed;
+
+    //PC & PC + 4
+     wire [31:0] pc_in, pc_out, insn_out, sign_extend;
+
      wire overflow, R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra, Rwe, Rdst, ALUinB, DMwe, RWd;
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
     alu alu_pc(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, dummy, dummy, dummy);   

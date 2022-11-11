@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY skeleton_test
+set_global_assignment -name TOP_LEVEL_ENTITY imem
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:06:42  OCTOBER 13, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.0.0 Lite Edition"
@@ -59,23 +59,10 @@ set_global_assignment -name EDA_TEST_BENCH_NAME skeleton_test_tb -section_id eda
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id skeleton_test_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME skeleton_test_tb -section_id skeleton_test_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE skeleton_test_tb.v -section_id skeleton_test_tb
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE RCA_16.v
-set_global_assignment -name VERILOG_FILE not_32_bit.v
-set_global_assignment -name VERILOG_FILE m81.v
-set_global_assignment -name VERILOG_FILE left_shift_32_bit.v
-set_global_assignment -name VERILOG_FILE judgeLess.v
-set_global_assignment -name VERILOG_FILE judgeEqual.v
-set_global_assignment -name VERILOG_FILE CSA_32_bit.v
-set_global_assignment -name VERILOG_FILE arithmetic_right_shift_32_bit.v
-set_global_assignment -name VERILOG_FILE alu.v
-set_global_assignment -name VERILOG_FILE adder_1.v
+set_global_assignment -name MIF_FILE mif_outputs/halfTestCases.mif
+set_global_assignment -name MIF_FILE mif_outputs/basic_test.mif
 set_global_assignment -name VERILOG_FILE two_to_four_decoder.v
 set_global_assignment -name VERILOG_FILE three_to_eight_decoder.v
-set_global_assignment -name TEXT_FORMAT_REPORT_FILE test_nativelink_simulation.rpt
-set_global_assignment -name SOURCE_FILE test.qsf
 set_global_assignment -name SOURCE_FILE sx.v.bak
 set_global_assignment -name VERILOG_FILE sx.v
 set_global_assignment -name SOURCE_FILE skeleton_test_tb.v.bak
@@ -85,31 +72,43 @@ set_global_assignment -name VERILOG_FILE skeleton_test.v
 set_global_assignment -name SOURCE_FILE skeleton.v.bak
 set_global_assignment -name VERILOG_FILE skeleton.v
 set_global_assignment -name VERILOG_FILE sixteen_bit_adder.v
-set_global_assignment -name SOURCE_FILE regfile.v.bak
 set_global_assignment -name VERILOG_FILE regfile.v
 set_global_assignment -name SOURCE_FILE README.md
+set_global_assignment -name VERILOG_FILE RCA_16.v
 set_global_assignment -name SOURCE_FILE processor.v.bak
 set_global_assignment -name VERILOG_FILE processor.v
 set_global_assignment -name VERILOG_FILE pc.v
+set_global_assignment -name VERILOG_FILE not_32_bit.v
+set_global_assignment -name VERILOG_FILE m81.v
 set_global_assignment -name VERILOG_FILE m21_32_bit.v
 set_global_assignment -name VERILOG_FILE m21.v
-set_global_assignment -name SOURCE_FILE imem.v.bak
-set_global_assignment -name VERILOG_FILE imem.v
-set_global_assignment -name QIP_FILE imem.qip
+set_global_assignment -name VERILOG_FILE left_shift_32_bit.v
+set_global_assignment -name VERILOG_FILE judgeLess.v
+set_global_assignment -name VERILOG_FILE judgeEqual.v
 set_global_assignment -name SOURCE_FILE halfTestCases.s
 set_global_assignment -name VERILOG_FILE getSig.v
 set_global_assignment -name VERILOG_FILE full_adder.v
 set_global_assignment -name VERILOG_FILE four_bit_adder.v
 set_global_assignment -name VERILOG_FILE five_to_thirtytwo_decoder.v
 set_global_assignment -name VERILOG_FILE eight_bit_adder.v
-set_global_assignment -name VERILOG_FILE dmem.v
-set_global_assignment -name QIP_FILE dmem.qip
 set_global_assignment -name VERILOG_FILE dffe.v
 set_global_assignment -name SOURCE_FILE ctrl_sig.v.bak
 set_global_assignment -name VERILOG_FILE ctrl_sig.v
+set_global_assignment -name VERILOG_FILE CSA_32_bit.v
 set_global_assignment -name VERILOG_FILE csa.v
 set_global_assignment -name VERILOG_FILE cmp.v
 set_global_assignment -name VERILOG_FILE clock_div4.v
 set_global_assignment -name VERILOG_FILE clock_div2.v
 set_global_assignment -name SOURCE_FILE basic_test.s
+set_global_assignment -name VERILOG_FILE arithmetic_right_shift_32_bit.v
+set_global_assignment -name VERILOG_FILE alu.v
+set_global_assignment -name VERILOG_FILE adder_1.v
+set_global_assignment -name VERILOG_FILE imem.v
+set_global_assignment -name VERILOG_FILE dmem.v
+set_global_assignment -name QIP_FILE imem.qip
+set_global_assignment -name QIP_FILE dmem.qip
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

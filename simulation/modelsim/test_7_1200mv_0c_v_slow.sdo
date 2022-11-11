@@ -30,7 +30,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "skeleton_test")
-  (DATE "11/10/2022 17:41:41")
+  (DATE "11/10/2022 18:28:54")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition")
@@ -579,7 +579,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE my_processor\|comb_3\|C_Add\|FA0\|cat\[3\]\.fi\|G3)
+    (INSTANCE my_processor\|alu_pc\|C_Add\|FA0\|cat\[3\]\.fi\|G3)
     (DELAY
       (ABSOLUTE
         (PORT dataa (286:286:286) (361:361:361))
@@ -682,7 +682,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE my_processor\|comb_3\|C_Add\|FA0\|cat\[6\]\.fi\|G3)
+    (INSTANCE my_processor\|alu_pc\|C_Add\|FA0\|cat\[6\]\.fi\|G3)
     (DELAY
       (ABSOLUTE
         (PORT dataa (313:313:313) (391:391:391))
@@ -785,7 +785,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE my_processor\|comb_3\|C_Add\|FA0\|cat\[9\]\.fi\|G3\~0)
+    (INSTANCE my_processor\|alu_pc\|C_Add\|FA0\|cat\[9\]\.fi\|G3\~0)
     (DELAY
       (ABSOLUTE
         (PORT dataa (294:294:294) (373:373:373))
@@ -801,7 +801,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE my_processor\|comb_3\|C_Add\|FA0\|cat\[9\]\.fi\|G3)
+    (INSTANCE my_processor\|alu_pc\|C_Add\|FA0\|cat\[9\]\.fi\|G3)
     (DELAY
       (ABSOLUTE
         (PORT dataa (290:290:290) (365:365:365))

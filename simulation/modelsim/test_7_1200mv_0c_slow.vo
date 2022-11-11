@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition"
 
-// DATE "11/10/2022 17:41:41"
+// DATE "11/10/2022 18:28:54"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -580,22 +580,22 @@ wire \my_processor|pc1|pc[2].pc_dffe|q~0_combout ;
 wire \my_processor|pc1|pc[2].pc_dffe|q~q ;
 wire \my_processor|pc1|pc[3].pc_dffe|q~0_combout ;
 wire \my_processor|pc1|pc[3].pc_dffe|q~q ;
-wire \my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout ;
+wire \my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout ;
 wire \my_processor|pc1|pc[4].pc_dffe|q~0_combout ;
 wire \my_processor|pc1|pc[4].pc_dffe|q~q ;
 wire \my_processor|pc1|pc[5].pc_dffe|q~0_combout ;
 wire \my_processor|pc1|pc[5].pc_dffe|q~q ;
 wire \my_processor|pc1|pc[6].pc_dffe|q~0_combout ;
 wire \my_processor|pc1|pc[6].pc_dffe|q~q ;
-wire \my_processor|comb_3|C_Add|FA0|cat[6].fi|G3~combout ;
+wire \my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3~combout ;
 wire \my_processor|pc1|pc[7].pc_dffe|q~0_combout ;
 wire \my_processor|pc1|pc[7].pc_dffe|q~q ;
 wire \my_processor|pc1|pc[8].pc_dffe|q~0_combout ;
 wire \my_processor|pc1|pc[8].pc_dffe|q~q ;
 wire \my_processor|pc1|pc[9].pc_dffe|q~0_combout ;
 wire \my_processor|pc1|pc[9].pc_dffe|q~q ;
-wire \my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~0_combout ;
-wire \my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~combout ;
+wire \my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~0_combout ;
+wire \my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~combout ;
 wire \my_processor|pc1|pc[10].pc_dffe|q~0_combout ;
 wire \my_processor|pc1|pc[10].pc_dffe|q~q ;
 wire \my_processor|pc1|pc[11].pc_dffe|q~0_combout ;
@@ -4004,31 +4004,31 @@ defparam \my_processor|pc1|pc[3].pc_dffe|q .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X65_Y1_N24
-cycloneive_lcell_comb \my_processor|comb_3|C_Add|FA0|cat[3].fi|G3 (
+cycloneive_lcell_comb \my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3 (
 // Equation(s):
-// \my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout  = (\my_processor|pc1|pc[1].pc_dffe|q~q  & (\my_processor|pc1|pc[0].pc_dffe|q~q  & (\my_processor|pc1|pc[3].pc_dffe|q~q  & \my_processor|pc1|pc[2].pc_dffe|q~q )))
+// \my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout  = (\my_processor|pc1|pc[1].pc_dffe|q~q  & (\my_processor|pc1|pc[0].pc_dffe|q~q  & (\my_processor|pc1|pc[3].pc_dffe|q~q  & \my_processor|pc1|pc[2].pc_dffe|q~q )))
 
 	.dataa(\my_processor|pc1|pc[1].pc_dffe|q~q ),
 	.datab(\my_processor|pc1|pc[0].pc_dffe|q~q ),
 	.datac(\my_processor|pc1|pc[3].pc_dffe|q~q ),
 	.datad(\my_processor|pc1|pc[2].pc_dffe|q~q ),
 	.cin(gnd),
-	.combout(\my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout ),
+	.combout(\my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout ),
 	.cout());
 // synopsys translate_off
-defparam \my_processor|comb_3|C_Add|FA0|cat[3].fi|G3 .lut_mask = 16'h8000;
-defparam \my_processor|comb_3|C_Add|FA0|cat[3].fi|G3 .sum_lutc_input = "datac";
+defparam \my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3 .lut_mask = 16'h8000;
+defparam \my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X65_Y1_N28
 cycloneive_lcell_comb \my_processor|pc1|pc[4].pc_dffe|q~0 (
 // Equation(s):
-// \my_processor|pc1|pc[4].pc_dffe|q~0_combout  = \my_processor|pc1|pc[4].pc_dffe|q~q  $ (\my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout )
+// \my_processor|pc1|pc[4].pc_dffe|q~0_combout  = \my_processor|pc1|pc[4].pc_dffe|q~q  $ (\my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(\my_processor|pc1|pc[4].pc_dffe|q~q ),
-	.datad(\my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout ),
+	.datad(\my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout ),
 	.cin(gnd),
 	.combout(\my_processor|pc1|pc[4].pc_dffe|q~0_combout ),
 	.cout());
@@ -4059,12 +4059,12 @@ defparam \my_processor|pc1|pc[4].pc_dffe|q .power_up = "low";
 // Location: LCCOMB_X65_Y1_N30
 cycloneive_lcell_comb \my_processor|pc1|pc[5].pc_dffe|q~0 (
 // Equation(s):
-// \my_processor|pc1|pc[5].pc_dffe|q~0_combout  = \my_processor|pc1|pc[5].pc_dffe|q~q  $ (((\my_processor|pc1|pc[4].pc_dffe|q~q  & \my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout )))
+// \my_processor|pc1|pc[5].pc_dffe|q~0_combout  = \my_processor|pc1|pc[5].pc_dffe|q~q  $ (((\my_processor|pc1|pc[4].pc_dffe|q~q  & \my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout )))
 
 	.dataa(gnd),
 	.datab(\my_processor|pc1|pc[4].pc_dffe|q~q ),
 	.datac(\my_processor|pc1|pc[5].pc_dffe|q~q ),
-	.datad(\my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout ),
+	.datad(\my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout ),
 	.cin(gnd),
 	.combout(\my_processor|pc1|pc[5].pc_dffe|q~0_combout ),
 	.cout());
@@ -4095,12 +4095,12 @@ defparam \my_processor|pc1|pc[5].pc_dffe|q .power_up = "low";
 // Location: LCCOMB_X65_Y1_N0
 cycloneive_lcell_comb \my_processor|pc1|pc[6].pc_dffe|q~0 (
 // Equation(s):
-// \my_processor|pc1|pc[6].pc_dffe|q~0_combout  = \my_processor|pc1|pc[6].pc_dffe|q~q  $ (((\my_processor|pc1|pc[4].pc_dffe|q~q  & (\my_processor|pc1|pc[5].pc_dffe|q~q  & \my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout ))))
+// \my_processor|pc1|pc[6].pc_dffe|q~0_combout  = \my_processor|pc1|pc[6].pc_dffe|q~q  $ (((\my_processor|pc1|pc[4].pc_dffe|q~q  & (\my_processor|pc1|pc[5].pc_dffe|q~q  & \my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout ))))
 
 	.dataa(\my_processor|pc1|pc[4].pc_dffe|q~q ),
 	.datab(\my_processor|pc1|pc[5].pc_dffe|q~q ),
 	.datac(\my_processor|pc1|pc[6].pc_dffe|q~q ),
-	.datad(\my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout ),
+	.datad(\my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout ),
 	.cin(gnd),
 	.combout(\my_processor|pc1|pc[6].pc_dffe|q~0_combout ),
 	.cout());
@@ -4129,31 +4129,31 @@ defparam \my_processor|pc1|pc[6].pc_dffe|q .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X65_Y1_N18
-cycloneive_lcell_comb \my_processor|comb_3|C_Add|FA0|cat[6].fi|G3 (
+cycloneive_lcell_comb \my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3 (
 // Equation(s):
-// \my_processor|comb_3|C_Add|FA0|cat[6].fi|G3~combout  = (\my_processor|pc1|pc[5].pc_dffe|q~q  & (\my_processor|pc1|pc[6].pc_dffe|q~q  & (\my_processor|pc1|pc[4].pc_dffe|q~q  & \my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout )))
+// \my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3~combout  = (\my_processor|pc1|pc[5].pc_dffe|q~q  & (\my_processor|pc1|pc[6].pc_dffe|q~q  & (\my_processor|pc1|pc[4].pc_dffe|q~q  & \my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout )))
 
 	.dataa(\my_processor|pc1|pc[5].pc_dffe|q~q ),
 	.datab(\my_processor|pc1|pc[6].pc_dffe|q~q ),
 	.datac(\my_processor|pc1|pc[4].pc_dffe|q~q ),
-	.datad(\my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout ),
+	.datad(\my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout ),
 	.cin(gnd),
-	.combout(\my_processor|comb_3|C_Add|FA0|cat[6].fi|G3~combout ),
+	.combout(\my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3~combout ),
 	.cout());
 // synopsys translate_off
-defparam \my_processor|comb_3|C_Add|FA0|cat[6].fi|G3 .lut_mask = 16'h8000;
-defparam \my_processor|comb_3|C_Add|FA0|cat[6].fi|G3 .sum_lutc_input = "datac";
+defparam \my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3 .lut_mask = 16'h8000;
+defparam \my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X65_Y1_N6
 cycloneive_lcell_comb \my_processor|pc1|pc[7].pc_dffe|q~0 (
 // Equation(s):
-// \my_processor|pc1|pc[7].pc_dffe|q~0_combout  = \my_processor|pc1|pc[7].pc_dffe|q~q  $ (\my_processor|comb_3|C_Add|FA0|cat[6].fi|G3~combout )
+// \my_processor|pc1|pc[7].pc_dffe|q~0_combout  = \my_processor|pc1|pc[7].pc_dffe|q~q  $ (\my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3~combout )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(\my_processor|pc1|pc[7].pc_dffe|q~q ),
-	.datad(\my_processor|comb_3|C_Add|FA0|cat[6].fi|G3~combout ),
+	.datad(\my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3~combout ),
 	.cin(gnd),
 	.combout(\my_processor|pc1|pc[7].pc_dffe|q~0_combout ),
 	.cout());
@@ -4184,12 +4184,12 @@ defparam \my_processor|pc1|pc[7].pc_dffe|q .power_up = "low";
 // Location: LCCOMB_X65_Y1_N12
 cycloneive_lcell_comb \my_processor|pc1|pc[8].pc_dffe|q~0 (
 // Equation(s):
-// \my_processor|pc1|pc[8].pc_dffe|q~0_combout  = \my_processor|pc1|pc[8].pc_dffe|q~q  $ (((\my_processor|pc1|pc[7].pc_dffe|q~q  & \my_processor|comb_3|C_Add|FA0|cat[6].fi|G3~combout )))
+// \my_processor|pc1|pc[8].pc_dffe|q~0_combout  = \my_processor|pc1|pc[8].pc_dffe|q~q  $ (((\my_processor|pc1|pc[7].pc_dffe|q~q  & \my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3~combout )))
 
 	.dataa(gnd),
 	.datab(\my_processor|pc1|pc[7].pc_dffe|q~q ),
 	.datac(\my_processor|pc1|pc[8].pc_dffe|q~q ),
-	.datad(\my_processor|comb_3|C_Add|FA0|cat[6].fi|G3~combout ),
+	.datad(\my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3~combout ),
 	.cin(gnd),
 	.combout(\my_processor|pc1|pc[8].pc_dffe|q~0_combout ),
 	.cout());
@@ -4220,12 +4220,12 @@ defparam \my_processor|pc1|pc[8].pc_dffe|q .power_up = "low";
 // Location: LCCOMB_X65_Y1_N22
 cycloneive_lcell_comb \my_processor|pc1|pc[9].pc_dffe|q~0 (
 // Equation(s):
-// \my_processor|pc1|pc[9].pc_dffe|q~0_combout  = \my_processor|pc1|pc[9].pc_dffe|q~q  $ (((\my_processor|pc1|pc[8].pc_dffe|q~q  & (\my_processor|pc1|pc[7].pc_dffe|q~q  & \my_processor|comb_3|C_Add|FA0|cat[6].fi|G3~combout ))))
+// \my_processor|pc1|pc[9].pc_dffe|q~0_combout  = \my_processor|pc1|pc[9].pc_dffe|q~q  $ (((\my_processor|pc1|pc[8].pc_dffe|q~q  & (\my_processor|pc1|pc[7].pc_dffe|q~q  & \my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3~combout ))))
 
 	.dataa(\my_processor|pc1|pc[8].pc_dffe|q~q ),
 	.datab(\my_processor|pc1|pc[7].pc_dffe|q~q ),
 	.datac(\my_processor|pc1|pc[9].pc_dffe|q~q ),
-	.datad(\my_processor|comb_3|C_Add|FA0|cat[6].fi|G3~combout ),
+	.datad(\my_processor|alu_pc|C_Add|FA0|cat[6].fi|G3~combout ),
 	.cin(gnd),
 	.combout(\my_processor|pc1|pc[9].pc_dffe|q~0_combout ),
 	.cout());
@@ -4254,48 +4254,48 @@ defparam \my_processor|pc1|pc[9].pc_dffe|q .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X65_Y1_N8
-cycloneive_lcell_comb \my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~0 (
+cycloneive_lcell_comb \my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~0 (
 // Equation(s):
-// \my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~0_combout  = (\my_processor|pc1|pc[8].pc_dffe|q~q  & (\my_processor|pc1|pc[4].pc_dffe|q~q  & (\my_processor|pc1|pc[5].pc_dffe|q~q  & \my_processor|pc1|pc[6].pc_dffe|q~q )))
+// \my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~0_combout  = (\my_processor|pc1|pc[8].pc_dffe|q~q  & (\my_processor|pc1|pc[4].pc_dffe|q~q  & (\my_processor|pc1|pc[5].pc_dffe|q~q  & \my_processor|pc1|pc[6].pc_dffe|q~q )))
 
 	.dataa(\my_processor|pc1|pc[8].pc_dffe|q~q ),
 	.datab(\my_processor|pc1|pc[4].pc_dffe|q~q ),
 	.datac(\my_processor|pc1|pc[5].pc_dffe|q~q ),
 	.datad(\my_processor|pc1|pc[6].pc_dffe|q~q ),
 	.cin(gnd),
-	.combout(\my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~0_combout ),
+	.combout(\my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~0 .lut_mask = 16'h8000;
-defparam \my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~0 .sum_lutc_input = "datac";
+defparam \my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~0 .lut_mask = 16'h8000;
+defparam \my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X65_Y1_N2
-cycloneive_lcell_comb \my_processor|comb_3|C_Add|FA0|cat[9].fi|G3 (
+cycloneive_lcell_comb \my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3 (
 // Equation(s):
-// \my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~combout  = (\my_processor|pc1|pc[9].pc_dffe|q~q  & (\my_processor|pc1|pc[7].pc_dffe|q~q  & (\my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~0_combout  & \my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout )))
+// \my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~combout  = (\my_processor|pc1|pc[9].pc_dffe|q~q  & (\my_processor|pc1|pc[7].pc_dffe|q~q  & (\my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~0_combout  & \my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout )))
 
 	.dataa(\my_processor|pc1|pc[9].pc_dffe|q~q ),
 	.datab(\my_processor|pc1|pc[7].pc_dffe|q~q ),
-	.datac(\my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~0_combout ),
-	.datad(\my_processor|comb_3|C_Add|FA0|cat[3].fi|G3~combout ),
+	.datac(\my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~0_combout ),
+	.datad(\my_processor|alu_pc|C_Add|FA0|cat[3].fi|G3~combout ),
 	.cin(gnd),
-	.combout(\my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~combout ),
+	.combout(\my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~combout ),
 	.cout());
 // synopsys translate_off
-defparam \my_processor|comb_3|C_Add|FA0|cat[9].fi|G3 .lut_mask = 16'h8000;
-defparam \my_processor|comb_3|C_Add|FA0|cat[9].fi|G3 .sum_lutc_input = "datac";
+defparam \my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3 .lut_mask = 16'h8000;
+defparam \my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: LCCOMB_X65_Y1_N4
 cycloneive_lcell_comb \my_processor|pc1|pc[10].pc_dffe|q~0 (
 // Equation(s):
-// \my_processor|pc1|pc[10].pc_dffe|q~0_combout  = \my_processor|pc1|pc[10].pc_dffe|q~q  $ (\my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~combout )
+// \my_processor|pc1|pc[10].pc_dffe|q~0_combout  = \my_processor|pc1|pc[10].pc_dffe|q~q  $ (\my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~combout )
 
 	.dataa(gnd),
 	.datab(gnd),
 	.datac(\my_processor|pc1|pc[10].pc_dffe|q~q ),
-	.datad(\my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~combout ),
+	.datad(\my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~combout ),
 	.cin(gnd),
 	.combout(\my_processor|pc1|pc[10].pc_dffe|q~0_combout ),
 	.cout());
@@ -4326,12 +4326,12 @@ defparam \my_processor|pc1|pc[10].pc_dffe|q .power_up = "low";
 // Location: LCCOMB_X65_Y1_N10
 cycloneive_lcell_comb \my_processor|pc1|pc[11].pc_dffe|q~0 (
 // Equation(s):
-// \my_processor|pc1|pc[11].pc_dffe|q~0_combout  = \my_processor|pc1|pc[11].pc_dffe|q~q  $ (((\my_processor|pc1|pc[10].pc_dffe|q~q  & \my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~combout )))
+// \my_processor|pc1|pc[11].pc_dffe|q~0_combout  = \my_processor|pc1|pc[11].pc_dffe|q~q  $ (((\my_processor|pc1|pc[10].pc_dffe|q~q  & \my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~combout )))
 
 	.dataa(\my_processor|pc1|pc[10].pc_dffe|q~q ),
 	.datab(gnd),
 	.datac(\my_processor|pc1|pc[11].pc_dffe|q~q ),
-	.datad(\my_processor|comb_3|C_Add|FA0|cat[9].fi|G3~combout ),
+	.datad(\my_processor|alu_pc|C_Add|FA0|cat[9].fi|G3~combout ),
 	.cin(gnd),
 	.combout(\my_processor|pc1|pc[11].pc_dffe|q~0_combout ),
 	.cout());
@@ -4389,9 +4389,9 @@ cycloneive_ram_block \my_imem|altsyncram_component|auto_generated|ram_block1a0 (
 // synopsys translate_off
 defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
 defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
-defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .init_file = "C:/Users/vcm/Desktop/22Fall-550/mif_outputs/basic_test.mif";
+defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .init_file = "./mif_outputs/halfTestCases.mif";
 defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .init_file_layout = "port_a";
-defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "imem:my_imem|altsyncram:altsyncram_component|altsyncram_jid1:auto_generated|ALTSYNCRAM";
+defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "imem:my_imem|altsyncram:altsyncram_component|altsyncram_l9b1:auto_generated|ALTSYNCRAM";
 defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .operation_mode = "rom";
 defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_clear = "none";
 defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_width = 8;
@@ -4411,7 +4411,7 @@ defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_
 defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M9K";
 defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .mem_init2 = 512'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
 defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .mem_init1 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
-defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080001000080001000DC0059002500010000300008000200004000000003000140000;
+defparam \my_imem|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 2048'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200004000000320000200004009400240000C000200004000000002000300008000100090000000001003FC0090003FC0000;
 // synopsys translate_on
 
 // Location: M9K_X104_Y1_N0

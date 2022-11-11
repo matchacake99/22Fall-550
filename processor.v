@@ -91,7 +91,7 @@ module processor(
     input [31:0] data_readRegA, data_readRegB;
 
 /* YOUR CODE STARTS HERE */
-	  wire dummy;
+     wire dummy;
      wire [4:0] opcode, rd, rs, rt, shamt, ALUopcode;
      wire [31:0] reg_outA, reg_outB, alu_result, data_out;
      wire [1:0] Zeroes;
@@ -108,6 +108,7 @@ module processor(
     assign address_imem = pc_out[11:0];
     assign insn_out = q_imem;
 
+    getSig pc_getSig(opcode, ALUop, R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra)
     ctrl_sig my_ctrl_sig(opcode, ALUopcode, Rwe, Rdst, ALUinB, DMwe, RWd);
     assign opcode = insn_out[31:27];
     assign rs = insn_out[21:17];
@@ -127,14 +128,15 @@ module processor(
     assign ctrl_readRegA = rs;
     assign ctrl_readRegB = R? rt : rd;
 	 
+    /*
     regfile myRegfile(
 	.clock(clock), .ctrl_writeEnable(ctrl_writeEnable), .ctrl_reset(reset), .ctrl_writeReg(ctrl_writeReg),
 	.ctrl_readRegA(ctrl_readRegA), .ctrl_readRegB(ctrl_readRegB), .data_writeReg(data_writeReg), .data_readRegA(data_readRegA),
 	.data_readRegB(data_readRegB)
 );
+*/
     
 	 
-     
     //ALU 
     assign reg_outA = data_readRegA;
     assign reg_outB = ALUinB? sign_extend : data_readRegB;

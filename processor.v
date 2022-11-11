@@ -154,7 +154,21 @@ module processor(
     assign data_out = q_dmem;
 	assign data_writeReg = lw? data_out:(R_add|R_sub|addi)? (overflow? overflow_dta: alu_result) : alu_result;
     
+    /*Additional*/
+    output [16:0] immed;
+    output [31:0] sign_extend;
 
+    output pc_out;
+    output pc_in;
+    output R;
+    output addi;
+    output lw;
+    output sw; 
+    output R_add;
+    output R_sub;
+
+    output [31:0] overflow_dta;
+    output overflow;
 	 
 
 endmodule

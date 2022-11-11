@@ -93,14 +93,15 @@ module processor(
 /* YOUR CODE STARTS HERE */
      wire dummy;
      wire [4:0] opcode, rd, rs, rt, shamt, ALUopcode;
-     wire [31:0] reg_outA, reg_outB, alu_result, data_out;
+     wire [31:0] ALU_inputA, ALU_inputB, alu_result, data_out;
      wire [1:0] Zeroes;
      wire [16:0] immed;
+     wire overflow, R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra, Rwe, Rdst, ALUinB, DMwe, RWd;
 
     //PC & PC + 4
      wire [31:0] pc_in, pc_out, insn_out, sign_extend;
 
-     wire overflow, R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra, Rwe, Rdst, ALUinB, DMwe, RWd;
+     
     pc pc1(.pc_out(pc_out), .clock(clock), .reset(reset), .pc_in(pc_in));
     alu alu_pc(pc_out, 32'd1, 5'b00000, 1'b0, pc_in, dummy, dummy, dummy);   
 
@@ -138,10 +139,10 @@ module processor(
     
 	 
     //ALU 
-    assign reg_outA = data_readRegA;
-    assign reg_outB = ALUinB? sign_extend : data_readRegB;
+    assign ALU_inputA = data_readRegA;
+    assign ALU_inputB = ALUinB? sign_extend : data_readRegB;
     assign overflow_dta= R_add? 32'd1:R_sub?32'd3:addi?32'd2:32'd0;
-    alu alu_dtapath(.data_operandA(reg_outA), .data_operandB(reg_outB), .ctrl_ALUopcode(ALUopcode),
+    alu alu_dtapath(.data_operandA(ALU_inputA), .data_operandB(ALU_inputB), .ctrl_ALUopcode(ALUopcode),
 			.ctrl_shiftamt(shamt), .data_result(alu_result), .isNotEqual(dummy), .isLessThan(dummy), .overflow(overflow));
     
 

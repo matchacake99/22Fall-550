@@ -27,9 +27,9 @@ data_writeReg,data_readRegA, data_readRegB);
 
    clk_div4 pc_clk1(.clk_out(clk_div), .clk(clock), .reset(reset));
 	 
-	 assign processor_clock = ~clk_div;
-    assign dmem_clock = clock;
-    assign imem_clock = dmem_clock;
+	assign processor_clock = ~clk_div;
+    assign dmem_clock = ~clock;
+    assign imem_clock = clock;
     assign regfile_clock = ~clk_div;
 
 
@@ -75,7 +75,13 @@ data_writeReg,data_readRegA, data_readRegB);
         data_readRegA,
         data_readRegB
     );
-
+    /*
+    regfile myRegfile(
+	.clock(clock), .ctrl_writeEnable(ctrl_writeEnable), .ctrl_reset(reset), .ctrl_writeReg(ctrl_writeReg),
+	.ctrl_readRegA(ctrl_readRegA), .ctrl_readRegB(ctrl_readRegB), .data_writeReg(data_writeReg), .data_readRegA(data_readRegA),
+	.data_readRegB(data_readRegB)
+);
+*/
     /** PROCESSOR **/
     processor my_processor(
         // Control signals

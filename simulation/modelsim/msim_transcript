@@ -12,239 +12,239 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:12 on Nov 10,2022
+# Start time: 20:33:57 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v 
 # -- Compiling module skeleton_test
 # 
 # Top level modules:
 # 	skeleton_test
-# End time: 18:29:12 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:57 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/regfile.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:12 on Nov 10,2022
+# Start time: 20:33:57 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/regfile.v 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 18:29:12 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:57 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/RCA_16.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:12 on Nov 10,2022
+# Start time: 20:33:57 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/RCA_16.v 
 # -- Compiling module RCA_16
 # 
 # Top level modules:
 # 	RCA_16
-# End time: 18:29:12 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:57 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/processor.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:12 on Nov 10,2022
+# Start time: 20:33:57 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/processor.v 
 # -- Compiling module processor
 # 
 # Top level modules:
 # 	processor
-# End time: 18:29:13 on Nov 10,2022, Elapsed time: 0:00:01
+# End time: 20:33:58 on Nov 10,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/pc.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:13 on Nov 10,2022
+# Start time: 20:33:58 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/pc.v 
 # -- Compiling module pc
 # 
 # Top level modules:
 # 	pc
-# End time: 18:29:13 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:58 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/not_32_bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:13 on Nov 10,2022
+# Start time: 20:33:58 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/not_32_bit.v 
 # -- Compiling module not_32_bit
 # 
 # Top level modules:
 # 	not_32_bit
-# End time: 18:29:13 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:58 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/m81.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:13 on Nov 10,2022
+# Start time: 20:33:58 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/m81.v 
 # -- Compiling module m81
 # 
 # Top level modules:
 # 	m81
-# End time: 18:29:13 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:58 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/m21_32_bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:13 on Nov 10,2022
+# Start time: 20:33:58 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/m21_32_bit.v 
 # -- Compiling module m21_32_bit
 # 
 # Top level modules:
 # 	m21_32_bit
-# End time: 18:29:13 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:58 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/m21.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:13 on Nov 10,2022
+# Start time: 20:33:58 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/m21.v 
 # -- Compiling module m21
 # 
 # Top level modules:
 # 	m21
-# End time: 18:29:13 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:58 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/left_shift_32_bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:14 on Nov 10,2022
+# Start time: 20:33:58 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/left_shift_32_bit.v 
 # -- Compiling module left_shift_32_bit
 # 
 # Top level modules:
 # 	left_shift_32_bit
-# End time: 18:29:14 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:58 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/judgeLess.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:14 on Nov 10,2022
+# Start time: 20:33:59 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/judgeLess.v 
 # -- Compiling module judgeLess
 # 
 # Top level modules:
 # 	judgeLess
-# End time: 18:29:14 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:59 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/judgeEqual.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:14 on Nov 10,2022
+# Start time: 20:33:59 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/judgeEqual.v 
 # -- Compiling module judgeEqual
 # 
 # Top level modules:
 # 	judgeEqual
-# End time: 18:29:14 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:59 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/getSig.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:14 on Nov 10,2022
+# Start time: 20:33:59 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/getSig.v 
 # -- Compiling module getSig
 # 
 # Top level modules:
 # 	getSig
-# End time: 18:29:14 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:59 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/dffe.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:14 on Nov 10,2022
+# Start time: 20:33:59 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/dffe.v 
 # -- Compiling module dffe_ref
 # 
 # Top level modules:
 # 	dffe_ref
-# End time: 18:29:14 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:59 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/ctrl_sig.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:14 on Nov 10,2022
+# Start time: 20:33:59 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/ctrl_sig.v 
 # -- Compiling module ctrl_sig
 # 
 # Top level modules:
 # 	ctrl_sig
-# End time: 18:29:14 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:59 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/CSA_32_bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:14 on Nov 10,2022
+# Start time: 20:33:59 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/CSA_32_bit.v 
 # -- Compiling module CSA_32_bit
 # 
 # Top level modules:
 # 	CSA_32_bit
-# End time: 18:29:14 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:59 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/clock_div4.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:14 on Nov 10,2022
+# Start time: 20:33:59 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/clock_div4.v 
 # -- Compiling module clk_div4
 # 
 # Top level modules:
 # 	clk_div4
-# End time: 18:29:15 on Nov 10,2022, Elapsed time: 0:00:01
+# End time: 20:33:59 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/arithmetic_right_shift_32_bit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:15 on Nov 10,2022
+# Start time: 20:33:59 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/arithmetic_right_shift_32_bit.v 
 # -- Compiling module arithmetic_right_shift_32_bit
 # 
 # Top level modules:
 # 	arithmetic_right_shift_32_bit
-# End time: 18:29:15 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:59 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/alu.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:15 on Nov 10,2022
+# Start time: 20:33:59 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/alu.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 18:29:15 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:33:59 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/adder_1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:15 on Nov 10,2022
+# Start time: 20:33:59 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/adder_1.v 
 # -- Compiling module adder_1
 # 
 # Top level modules:
 # 	adder_1
-# End time: 18:29:15 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:34:00 on Nov 10,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/imem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:15 on Nov 10,2022
+# Start time: 20:34:00 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/imem.v 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 18:29:15 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:34:00 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/dmem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:15 on Nov 10,2022
+# Start time: 20:34:00 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/dmem.v 
 # -- Compiling module dmem
 # 
 # Top level modules:
 # 	dmem
-# End time: 18:29:15 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:34:00 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/skeleton_test_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:29:15 on Nov 10,2022
+# Start time: 20:34:00 on Nov 10,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/vcm/Desktop/22Fall-550" C:/Users/vcm/Desktop/22Fall-550/skeleton_test_tb.v 
 # -- Compiling module skeleton_test_tb
 # 
 # Top level modules:
 # 	skeleton_test_tb
-# End time: 18:29:15 on Nov 10,2022, Elapsed time: 0:00:00
+# End time: 20:34:00 on Nov 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  skeleton_test_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" skeleton_test_tb 
-# Start time: 18:29:19 on Nov 10,2022
+# Start time: 20:34:00 on Nov 10,2022
 # Loading work.skeleton_test_tb
 # Loading work.skeleton_test
 # Loading work.clk_div4
@@ -265,8 +265,8 @@
 # Loading work.arithmetic_right_shift_32_bit
 # Loading work.judgeEqual
 # Loading work.judgeLess
-# Loading work.ctrl_sig
 # Loading work.getSig
+# Loading work.ctrl_sig
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
@@ -291,16 +291,11 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Warning: (vsim-3534) [FOFIR] - Failed to open file "./mif_outputs/halfTestCases.mif" for reading.
-# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(264)
-#    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_imem/altsyncram_component/m_default/altsyncram_inst
-# ERROR: cannot read ./mif_outputs/halfTestCases.mif.
-# ** Warning: (vsim-7) Failed to open readmem file "./mif_outputs/halfTestCases.ver" in read mode.
-# No such file or directory. (errno = ENOENT)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(48977)
+# ** Warning: (vsim-PLI-3406) Too many digits (8) in data on line 2 of file "C:/Users/vcm/Desktop/22Fall-550/mif_outputs/halfTestCases.ver". (Max is 2.)    : /build/swbuild/SJ/nightly/17.0std/595/l64/work/modelsim/eda/sim_lib/altera_mf.v(48977)
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_test_tb/myskeleton/my_imem/altsyncram_component/m_default/altsyncram_inst
 #                    0 << Starting the Simulation >>
 # ** Note: $stop    : C:/Users/vcm/Desktop/22Fall-550/skeleton_test_tb.v(38)
 #    Time: 4020 ns  Iteration: 1  Instance: /skeleton_test_tb
 # Break in Module skeleton_test_tb at C:/Users/vcm/Desktop/22Fall-550/skeleton_test_tb.v line 38
-# End time: 19:32:30 on Nov 10,2022, Elapsed time: 1:03:11
-# Errors: 0, Warnings: 8
+# End time: 20:35:51 on Nov 10,2022, Elapsed time: 0:01:51
+# Errors: 0, Warnings: 7

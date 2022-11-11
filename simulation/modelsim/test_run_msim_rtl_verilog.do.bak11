@@ -5,28 +5,28 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v}
+vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/regfile.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/RCA_16.v}
+vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/processor.v}
+vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/pc.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/not_32_bit.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/m81.v}
+vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/m21_32_bit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/m21.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/left_shift_32_bit.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/judgeLess.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/judgeEqual.v}
+vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/getSig.v}
+vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/dffe.v}
+vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/ctrl_sig.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/CSA_32_bit.v}
+vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/clock_div4.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/arithmetic_right_shift_32_bit.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/alu.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/adder_1.v}
-vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/skeleton_test.v}
-vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/regfile.v}
-vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/processor.v}
-vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/pc.v}
-vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/m21_32_bit.v}
-vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/m21.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/imem.v}
-vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/getSig.v}
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/dmem.v}
-vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/dffe.v}
-vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/ctrl_sig.v}
-vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/clock_div4.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/vcm/Desktop/22Fall-550 {C:/Users/vcm/Desktop/22Fall-550/skeleton_test_tb.v}
 

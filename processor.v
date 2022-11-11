@@ -108,7 +108,7 @@ module processor(
     assign address_imem = pc_out[11:0];
     assign insn_out = q_imem;
 
-    getSig pc_getSig(opcode, ALUop, R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra)
+    getSig pc_getSig(opcode, ALUopcode, R, addi, lw, sw, R_add, R_sub, R_and, R_or, R_sll, R_sra);
     ctrl_sig my_ctrl_sig(opcode, ALUopcode, Rwe, Rdst, ALUinB, DMwe, RWd);
     assign opcode = insn_out[31:27];
     assign rs = insn_out[21:17];

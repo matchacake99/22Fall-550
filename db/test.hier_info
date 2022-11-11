@@ -1,10 +1,10 @@
 |skeleton
 clock => clock.IN2
 reset => reset.IN3
-imem_clock <= clock.DB_MAX_OUTPUT_PORT_TYPE
-dmem_clock <= dmem_clock.DB_MAX_OUTPUT_PORT_TYPE
-processor_clock <= processor_clock.DB_MAX_OUTPUT_PORT_TYPE
-regfile_clock <= regfile_clock.DB_MAX_OUTPUT_PORT_TYPE
+imem_clock << clock.DB_MAX_OUTPUT_PORT_TYPE
+dmem_clock << dmem_clock.DB_MAX_OUTPUT_PORT_TYPE
+processor_clock << processor_clock.DB_MAX_OUTPUT_PORT_TYPE
+regfile_clock << regfile_clock.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |skeleton|clk_div4:pc_clk1
